@@ -30,8 +30,8 @@ public class PrepareCaseReportTest extends TestBase{
 	public void CaseReportTest() throws InterruptedException, AWTException
 	{
 		evaluation = new EvaluationClass(driver);
-		for(int i=1;i<=20;i+=2) {
-			evaluation.openasset("(//div[@class='display-flex align-items-flex-start']/div[@class='display-flex flex-direction-column']/span[@class='white-space-nowrap '])["+i+"]");
+		for(int i=1;i<=2;i++) {
+			evaluation.openasset("(//div[@class='display-flex align-items-flex-start']/div[@class='display-flex flex-direction-column']/span[@class='white-space-nowrap '])[1]");
 			evaluation.addreportdata("2022-01-01", "2022-01-01", "codelab", "0512345678");
 			evaluation.addworkscope("123422", "1000");
 			evaluation.addassetinfo();

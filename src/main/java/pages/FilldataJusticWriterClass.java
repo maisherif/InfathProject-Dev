@@ -40,10 +40,10 @@ public class FilldataJusticWriterClass {
 		public void justicwriterapproval (String eyexpath,String tasknumber) throws InterruptedException
 		{
 			
-			 driver.findElement(searchtasknumber).sendKeys(tasknumber);
-
-			 WebElement button =driver.findElement(searchbutton);
-			 clickButtonJS(button);
+//			 driver.findElement(searchtasknumber).sendKeys(tasknumber);
+//
+//			 WebElement button =driver.findElement(searchbutton);
+//			 clickButtonJS(button);
 			
 			 By eyeicon = By.xpath(eyexpath);
 			 Thread.sleep(5000);
@@ -53,7 +53,7 @@ public class FilldataJusticWriterClass {
 			 
 			 Thread.sleep(5000);
 			
-			 button =driver.findElement(radiobutton1);
+			 WebElement button =driver.findElement(radiobutton1);
 			 clickButtonJS(button);
 			 
 			 button =driver.findElement(radiobutton2);

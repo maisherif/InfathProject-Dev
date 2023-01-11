@@ -29,21 +29,24 @@ public class EvaluationClass {
 	}
 
 	//External User
-//        private By newbutton = By.xpath("(//div[@class='display-flex align-items-center']/span)[2]");
+        private By newbutton = By.xpath("(//div[@class='display-flex align-items-center']/span)[2]");
   		private By casesreportbutton = By.xpath("//div[@class='display-flex margin-right-s']/span");
 		
 		public void openasset(String deednumber) throws InterruptedException  
 		{
-//			wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-//			WebElement button = driver.findElement(newbutton);
-//			wait.until(ExpectedConditions.visibilityOf(button));
-//			clickButtonJS(button);
+			Thread.sleep(2000);
+			wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+			WebElement button = driver.findElement(newbutton);
+			wait.until(ExpectedConditions.visibilityOf(button));
+			clickButtonJS(button);
 			
 			Thread.sleep(2000);
 			By deednumberbutton_assetcard = By.xpath(deednumber);
 			WebElement element = driver.findElement(deednumberbutton_assetcard);
 			clickButtonJS(element);
 		
+			Thread.sleep(2000);
+
 			
 			WebElement casestudybuttonelement = driver.findElement(casesreportbutton);
 			clickButtonJS(casestudybuttonelement);

@@ -45,11 +45,11 @@ public class AddRecomendationClass {
 			wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 			wait.until(ExpectedConditions.visibilityOf(driver.findElement(searchtasknumberresearcher)));
 			
-			 driver.findElement(searchtasknumberresearcher).sendKeys(tasknumber);
+//			 driver.findElement(searchtasknumberresearcher).sendKeys(tasknumber);
 
-			 WebElement button =driver.findElement(searchbutton2);
-			 clickButtonJS(button);
-			  button = driver.findElement(taskname);
+//			 WebElement button =driver.findElement(searchbutton2);
+//			 clickButtonJS(button);
+			 WebElement  button = driver.findElement(taskname);
 			 clickButtonJS(button);
 			
 		}

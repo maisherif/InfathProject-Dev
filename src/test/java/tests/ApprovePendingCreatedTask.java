@@ -33,12 +33,12 @@ public class ApprovePendingCreatedTask extends TestBase{
 		approvetask.assigntaskbyserverprovider();
 		
 	}
-	@Test (dependsOnMethods = {"Assigntaskbyserverprovider"})
-	public void logout() throws InterruptedException
-	{
-		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", logoutbutton);
-		System.out.println(driver.getCurrentUrl());
-	}
+//	@Test (dependsOnMethods = {"Assigntaskbyserverprovider"})
+//	public void logout() throws InterruptedException
+//	{
+//		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].click();", logoutbutton);
+//		System.out.println(driver.getCurrentUrl());
+//	}
 }

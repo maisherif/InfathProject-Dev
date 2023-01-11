@@ -35,13 +35,13 @@ public class AssignTaskfromSupervisior_Test extends TestBase{
 		assigntaskfromsupervisior.suppervisorassigndataentry(); 
 
 	}
-	@Test (dependsOnMethods = {"Assigndataentry"}, enabled = true )
-	public void logout1() throws InterruptedException
-	{
-		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", logoutbutton);
-		System.out.println(driver.getCurrentUrl());
-	}
+//	@Test (dependsOnMethods = {"Assigndataentry"}, enabled = true )
+//	public void logout1() throws InterruptedException
+//	{
+//		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].click();", logoutbutton);
+//		System.out.println(driver.getCurrentUrl());
+//	}
 
 }

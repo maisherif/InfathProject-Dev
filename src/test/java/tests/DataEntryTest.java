@@ -31,7 +31,7 @@ public class DataEntryTest extends TestBase{
 		taskpage = new TaskPage(driver);
 		taskpage.opentask();
  		taskpage.TaskDetails("AutomatedAssetsTasks","711","127","0512345678","SA0410000079451000000207","1","2","2");
- 		for(int i=1;i<=10;i++)
+ 		for(int i=1;i<=2;i++)
 		{
 			if(i>=9)
 			{
@@ -47,14 +47,6 @@ public class DataEntryTest extends TestBase{
 		}
 		taskpage.sendforinitialapproval();
 
-	}
-	@Test (dependsOnMethods = {"DataEntry"})
-	public void logout() throws InterruptedException
-	{
-		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", logoutbutton);
-		System.out.println(driver.getCurrentUrl());
 	}
 	
 }

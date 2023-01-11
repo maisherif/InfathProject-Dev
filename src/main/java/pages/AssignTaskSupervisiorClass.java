@@ -34,8 +34,9 @@ public class AssignTaskSupervisiorClass {
 	private By assigntodataentry = By.xpath("//button/div[text()='Assign']");
 
 	
-	public void suppervisorassigndataentry()  
+	public void suppervisorassigndataentry() throws InterruptedException  
 	{
+		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 				
 		WebElement newbutton = driver.findElement(newcreatedtasksbutton);

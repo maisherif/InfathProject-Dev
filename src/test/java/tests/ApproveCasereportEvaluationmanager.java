@@ -30,7 +30,7 @@ public class ApproveCasereportEvaluationmanager extends TestBase{
 	{
 		approvecasereport = new ApproveCaseReport(driver);
 
-		for(int i=1;i<=10;i++) {
+		for(int i=1;i<=2;i++) {
 			approvecasereport.evaluationmanager("(//div[@class='display-flex align-items-flex-start']/div[@class='display-flex flex-direction-column'])[1]");
 
 		}

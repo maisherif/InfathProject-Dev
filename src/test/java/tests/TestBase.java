@@ -72,9 +72,9 @@ public class TestBase {
 
 	}
 	
-	@AfterClass
-	public void Closedriver() {
-	driver.close();
-}
+//	@AfterClass
+//	public void Closedriver() {
+//	driver.close();
+//}
 
 }

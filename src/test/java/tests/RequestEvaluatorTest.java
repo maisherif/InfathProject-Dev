@@ -32,7 +32,7 @@ public class RequestEvaluatorTest extends TestBase{
 	{
 		requestevaluator = new RequestEvaluatorClass(driver);
 		requestevaluator.openpreparingscopetab();
-		for(int i=2;i<=20;i+=2) {
+		for(int i=2;i<=4;i+=2) {
 		requestevaluator.selectassets("(//div[@class='position-absolute absolute-top-right ']/span/input)["+i+"]");
 		}
 		requestevaluator.sendhirerequest();

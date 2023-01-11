@@ -35,6 +35,7 @@ public class TaskPage {
 	
 	
 	public void opentask() throws InterruptedException {
+		Thread.sleep(3000);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		WebElement button1 = driver.findElement(pendingonentrybutton);
 		wait.until(ExpectedConditions.visibilityOf(button1));
@@ -77,6 +78,7 @@ public class TaskPage {
 	public void TaskDetails(String tasknametext, String ExecutioRequestDebit,String TotalDebitAmountnumerically,String Contactnumber, String iban,String JudicialDecisionNumber,String ExecutionDeedNumber, String NumberofAssetsinTask) throws InterruptedException, AWTException 
 	{
 	
+		Thread.sleep(2000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	    js.executeScript("arguments[0].scrollIntoView();", 	driver.findElement(ExecutionRequestTypedropdownlist));
@@ -138,7 +140,7 @@ public class TaskPage {
 
 //		wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 //		wait.until(ExpectedConditions.visibilityOf(JudicialDecisionImage_uploadfilebuttonelement));
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 	    WebElement saveasdraftfirstsectionelement = driver.findElement(saveasdraftfirstsection);
 		clickButtonJS(saveasdraftfirstsectionelement);
@@ -300,8 +302,10 @@ public void addassetsentry(String assettitlepath,String Schema,String PartNumber
 	 Select listvalue7 = new Select(driver.findElement(deedregision_dropdownlist));
 	 listvalue7.selectByIndex(6);
 	 
+		wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(deedcity_dropdownlist)));
 
-
+		Thread.sleep(2000);
 	 Select listvalue6 = new Select(driver.findElement(deedcity_dropdownlist));
 	 listvalue6.selectByIndex(14);
 
@@ -365,22 +369,21 @@ public void addassetsentry(String assettitlepath,String Schema,String PartNumber
 	 //Send for initial approve
 	
 		private By sendforinitialapprovalbutton = By.xpath("//div[@class='footer-actions margin-top-base background-neutral-2 padding-s border-radius-soft']/button[text()='Send for Initial Approval']");
-		private By approvesendingbutton = By.xpath("//div[@class='footer-actions margin-top-base']/button[text()='Approve']");
+		private By approvesendingbutton = By.xpath("//button[text()='Approve']");
 		
 	public void sendforinitialapproval() throws InterruptedException
 	{
 		
+		Thread.sleep(3000);
 
 		WebElement sendforinitialapprovalbuttononement = driver.findElement(sendforinitialapprovalbutton);
-		
 		clickButtonJS(sendforinitialapprovalbuttononement);
-		
+		Thread.sleep(3000);
 
-		
 		WebElement approvesendingbuttonement = driver.findElement(approvesendingbutton);
 		clickButtonJS(approvesendingbuttonement);
 		
-		
+		Thread.sleep(1000);
 	}
 	//Assign Task by supervisor
 	        private By pendingoninitialapprovalbutton = By.xpath("(//div[@class='display-flex align-items-center ThemeGrid_Width10']/span)[5]");

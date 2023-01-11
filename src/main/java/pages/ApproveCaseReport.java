@@ -68,6 +68,7 @@ public class ApproveCaseReport {
 			  driver.findElement(indicatedvaluetextbox).sendKeys("4565");
 			  driver.findElement(searchsourcelinktextbox).sendKeys("554");
 
+			  Thread.sleep(2000);
 			 
 			   wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 
@@ -77,6 +78,8 @@ public class ApproveCaseReport {
 			 
 			 button = driver.findElement(propertieslistbutton);
 			 clickButtonJS(button);
+			 
+			 Thread.sleep(2000);
 			 
 		}
 		private By pendingondepartmentmanagment = By.xpath("(//div[@class='display-flex align-items-center']/span[@class='white-space-nowrap'])[4]");
@@ -111,6 +114,9 @@ public class ApproveCaseReport {
 			 
 			 WebElement button = driver.findElement(propertieslistbutton);
 			 clickButtonJS(button);
+			 
+			 Thread.sleep(2000);
+
 			 
 		}
 	
