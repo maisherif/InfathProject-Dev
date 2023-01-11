@@ -31,7 +31,7 @@ public class DataEntryTest extends TestBase{
 		taskpage = new TaskPage(driver);
 		taskpage.opentask();
  		taskpage.TaskDetails("AutomatedAssetsTasks","711","127","0512345678","SA0410000079451000000207","1","2","2");
- 		for(int i=1;i<=2;i++)
+ 		for(int i=1;i<=10;i++)
 		{
 			if(i>=9)
 			{

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="1" skipped="1">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-11T11:03:57 EET" name="Suite" finished-at="2023-01-11T11:05:44 EET" duration-ms="107032">
+  <suite started-at="2023-01-11T13:20:33 EET" name="Default suite" finished-at="2023-01-11T13:21:55 EET" duration-ms="82141">
     <groups>
     </groups>
-    <test started-at="2023-01-11T11:03:57 EET" name="Test" finished-at="2023-01-11T11:05:44 EET" duration-ms="107032">
-      <class name="tests.AddrecomendationTest">
-        <test-method is-config="true" signature="Startdriver(java.lang.String)[pri:0, instance:tests.AddrecomendationTest@55a147cc]" started-at="2023-01-11T11:03:57 EET" name="Startdriver" finished-at="2023-01-11T11:04:02 EET" duration-ms="5463" status="PASS">
+    <test started-at="2023-01-11T13:20:33 EET" name="Default test" finished-at="2023-01-11T13:21:55 EET" duration-ms="82141">
+      <class name="tests.PrepareCaseReportTest">
+        <test-method is-config="true" signature="Startdriver(java.lang.String)[pri:0, instance:tests.PrepareCaseReportTest@20140db9]" started-at="2023-01-11T13:20:33 EET" name="Startdriver" finished-at="2023-01-11T13:21:17 EET" duration-ms="43344" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,56 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startdriver -->
-        <test-method signature="loginLegalConsultationResearcher2()[pri:0, instance:tests.AddrecomendationTest@55a147cc]" started-at="2023-01-11T11:04:02 EET" name="loginLegalConsultationResearcher2" finished-at="2023-01-11T11:04:09 EET" duration-ms="6848" status="PASS">
+        <test-method signature="LoginExternalUser()[pri:0, instance:tests.PrepareCaseReportTest@20140db9]" started-at="2023-01-11T13:21:17 EET" name="LoginExternalUser" finished-at="2023-01-11T13:21:26 EET" duration-ms="9568" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginLegalConsultationResearcher2 -->
-        <test-method signature="addrecomendation()[pri:0, instance:tests.AddrecomendationTest@55a147cc]" started-at="2023-01-11T11:04:09 EET" name="addrecomendation" finished-at="2023-01-11T11:04:37 EET" depends-on-methods="tests.AddrecomendationTest.loginLegalConsultationResearcher2" duration-ms="27383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addrecomendation -->
-        <test-method signature="logout2()[pri:0, instance:tests.AddrecomendationTest@55a147cc]" started-at="2023-01-11T11:04:37 EET" name="logout2" finished-at="2023-01-11T11:04:37 EET" depends-on-methods="tests.AddrecomendationTest.addrecomendation" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout2 -->
-      </class> <!-- tests.AddrecomendationTest -->
-      <class name="tests.ApproverecomendationTest">
-        <test-method is-config="true" signature="Startdriver(java.lang.String)[pri:0, instance:tests.ApproverecomendationTest@3646a422]" started-at="2023-01-11T11:04:37 EET" name="Startdriver" finished-at="2023-01-11T11:04:46 EET" duration-ms="9574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Startdriver -->
-        <test-method signature="loginLegalConsultationapproval2()[pri:0, instance:tests.ApproverecomendationTest@3646a422]" started-at="2023-01-11T11:04:46 EET" name="loginLegalConsultationapproval2" finished-at="2023-01-11T11:04:55 EET" duration-ms="8461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLegalConsultationapproval2 -->
-        <test-method signature="approverecomendation()[pri:0, instance:tests.ApproverecomendationTest@3646a422]" started-at="2023-01-11T11:04:55 EET" name="approverecomendation" finished-at="2023-01-11T11:05:44 EET" depends-on-methods="tests.ApproverecomendationTest.loginLegalConsultationapproval2" duration-ms="49234" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- LoginExternalUser -->
+        <test-method signature="CaseReportTest()[pri:0, instance:tests.PrepareCaseReportTest@20140db9]" started-at="2023-01-11T13:21:26 EET" name="CaseReportTest" finished-at="2023-01-11T13:21:55 EET" depends-on-methods="tests.PrepareCaseReportTest.LoginExternalUser" duration-ms="29152" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Unable to locate element: (//i[@class='icon fa fa-check fa-1x'])[2]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Element <input id="b5-b17-b1-b11-Input_DecimalVar" class="form-control OSFillParent" type="number"> is not reachable by keyboard
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'MAISHERIF', ip: '100.64.176.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a9e9e34a-c8fb-4b8d-8970-8643ca984699, findElement {using=xpath, value=(//i[@class='icon fa fa-check fa-1x'])[2]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:65395, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 45564, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:65395/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a9e9e34a-c8fb-4b8d-8970-8643ca984699]]>
+Command: [218fd383-c8fc-45fb-88ca-8508ad4e3d04, sendKeysToElement {id=6a404639-5d13-4f67-b8b9-3fb10e0226a9, value=[Ljava.lang.CharSequence;@69f0b0f4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:53479, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 51160, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53479/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (218fd383-c8fc-45fb-88ca-8508ad4e3d04)] -> xpath: //input[@id='b5-b17-b1-b11-Input_DecimalVar']]
+Session ID: 218fd383-c8fc-45fb-88ca-8508ad4e3d04]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//i[@class='icon fa fa-check fa-1x'])[2]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input id="b5-b17-b1-b11-Input_DecimalVar" class="form-control OSFillParent" type="number"> is not reachable by keyboard
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'MAISHERIF', ip: '100.64.176.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a9e9e34a-c8fb-4b8d-8970-8643ca984699, findElement {using=xpath, value=(//i[@class='icon fa fa-check fa-1x'])[2]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:65395, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 45564, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:65395/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a9e9e34a-c8fb-4b8d-8970-8643ca984699
+Command: [218fd383-c8fc-45fb-88ca-8508ad4e3d04, sendKeysToElement {id=6a404639-5d13-4f67-b8b9-3fb10e0226a9, value=[Ljava.lang.CharSequence;@69f0b0f4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:53479, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 51160, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53479/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (218fd383-c8fc-45fb-88ca-8508ad4e3d04)] -> xpath: //input[@id='b5-b17-b1-b11-Input_DecimalVar']]
+Session ID: 218fd383-c8fc-45fb-88ca-8508ad4e3d04
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -80,12 +55,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at pages.ApproveRecomendationClass.approverecomendation(ApproveRecomendationClass.java:63)
-at tests.ApproverecomendationTest.approverecomendation(ApproverecomendationTest.java:39)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at pages.EvaluationClass.addassetinfo(EvaluationClass.java:156)
+at tests.PrepareCaseReportTest.CaseReportTest(PrepareCaseReportTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,45 +89,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- approverecomendation -->
-        <test-method signature="logout3()[pri:0, instance:tests.ApproverecomendationTest@3646a422]" started-at="2023-01-11T11:05:44 EET" name="logout3" finished-at="2023-01-11T11:05:44 EET" depends-on-methods="tests.ApproverecomendationTest.approverecomendation" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method tests.ApproverecomendationTest.logout3() on instance tests.ApproverecomendationTest@3646a422 depends on not successfully finished methods 
-[tests.ApproverecomendationTest.approverecomendation() on instance tests.ApproverecomendationTest@3646a422]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.ApproverecomendationTest.logout3() on instance tests.ApproverecomendationTest@3646a422 depends on not successfully finished methods 
-[tests.ApproverecomendationTest.approverecomendation() on instance tests.ApproverecomendationTest@3646a422]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout3 -->
-      </class> <!-- tests.ApproverecomendationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- CaseReportTest -->
+      </class> <!-- tests.PrepareCaseReportTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

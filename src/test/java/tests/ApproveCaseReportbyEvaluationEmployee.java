@@ -27,7 +27,7 @@ public class ApproveCaseReportbyEvaluationEmployee extends TestBase{
 	@Test (dependsOnMethods = {"loginEvaluationEmploee"}) 
 	public void employeeevaluation() throws InterruptedException
 	{
-		for(int i=1;i<=2;i++)
+		for(int i=1;i<=10;i++)
 		{
 			approvecasereport = new ApproveCaseReport(driver);
 			approvecasereport.evaluationemployee("(//div[@class='display-flex align-items-flex-start']/div[@class='display-flex flex-direction-column'])[1]");

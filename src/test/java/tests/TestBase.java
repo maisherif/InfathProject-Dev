@@ -69,6 +69,12 @@ public class TestBase {
 		} else if (url.equalsIgnoreCase("external")) {
 			driver.navigate().to("https://172.20.25.21/Eservices_External/Login");
 		}
+		//dev
+//		if (url.equalsIgnoreCase("internal")) {
+//			driver.navigate().to("https://172.20.23.14/Eservices_Internal/AssetsList");
+//		} else if (url.equalsIgnoreCase("external")) {
+//			driver.navigate().to("https://172.20.23.14/Eservices_External/Login");
+//		}
 
 	}
 	

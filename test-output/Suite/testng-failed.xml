@@ -3,14 +3,53 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.AddrecomendationTest">
+        <methods>
+          <include name="logout2"/>
+          <include name="loginLegalConsultationResearcher2"/>
+          <include name="Startdriver"/>
+          <include name="addrecomendation"/>
+        </methods>
+      </class> <!-- tests.AddrecomendationTest -->
       <class name="tests.ApproverecomendationTest">
         <methods>
           <include name="logout3"/>
-          <include name="approverecomendation"/>
           <include name="loginLegalConsultationapproval2"/>
+          <include name="approverecomendation"/>
           <include name="Startdriver"/>
         </methods>
       </class> <!-- tests.ApproverecomendationTest -->
+      <class name="tests.PrepareCaseReportTest">
+        <methods>
+          <include name="LoginExternalUser"/>
+          <include name="CaseReportTest"/>
+          <include name="Startdriver"/>
+        </methods>
+      </class> <!-- tests.PrepareCaseReportTest -->
+      <class name="tests.FillDataJusticWriterTest">
+        <methods>
+          <include name="justicwriterapproval"/>
+          <include name="loginJusticeWriter"/>
+          <include name="Startdriver"/>
+          <include name="logout1"/>
+        </methods>
+      </class> <!-- tests.FillDataJusticWriterTest -->
+      <class name="tests.ApproveCasereportEvaluationmanager">
+        <methods>
+          <include name="managmentevaluation"/>
+          <include name="Startdriver"/>
+          <include name="LoginmanagerEvaluation"/>
+          <include name="logout2"/>
+        </methods>
+      </class> <!-- tests.ApproveCasereportEvaluationmanager -->
+      <class name="tests.ApproveCaseReportbyEvaluationEmployee">
+        <methods>
+          <include name="logout1"/>
+          <include name="loginEvaluationEmploee"/>
+          <include name="Startdriver"/>
+          <include name="employeeevaluation"/>
+        </methods>
+      </class> <!-- tests.ApproveCaseReportbyEvaluationEmployee -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

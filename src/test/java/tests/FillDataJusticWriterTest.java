@@ -33,7 +33,7 @@ public class FillDataJusticWriterTest extends TestBase{
 	public void justicwriterapproval() throws InterruptedException
 	{
 		filldatajusticwriter = new FilldataJusticWriterClass(driver);
-		for(int i=1;i<=2;i++) {
+		for(int i=1;i<=10;i++) {
 			filldatajusticwriter.justicwriterapproval("(//td[@data-header='View Request Details']/a)["+i+"]","199711000000");
 		}
 	}

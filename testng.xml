@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="tests.AssignTaskfromSupervisior_Test"/>
+            <class name="tests.AssignTaskfromSupervisior_Test"/>
       <class name="tests.DataEntryTest"/>
       <class name="tests.ApprovePendingCreatedTask"/>
       <class name="tests.RequestEvaluatorTest"/>
@@ -13,7 +13,7 @@
       <class name="tests.ApproveCasereportEvaluationmanager"/>
       <class name="tests.FillDataJusticWriterTest"/>
       <class name="tests.AddrecomendationTest"/>
-      <class name="tests.ApproverecomendationTest"/>    
+      <class name="tests.ApproverecomendationTest"/>  
      </classes> 
   </test> <!-- Test -->
 </suite> <!-- Suite -->

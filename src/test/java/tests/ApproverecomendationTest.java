@@ -35,7 +35,7 @@ public class ApproverecomendationTest extends TestBase{
 		approverecomendation = new ApproveRecomendationClass(driver);
 		approverecomendation.opentask("122456789000");
 		approverecomendation.gotorecomendationtab();
-		for(int i=1;i<=2;i++) {
+		for(int i=1;i<=10;i++) {
 			approverecomendation.approverecomendation("(//i[@class='icon fa fa-check fa-1x'])["+i+"]");
 			}
 	}

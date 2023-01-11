@@ -1,0 +1,13 @@
+pages\EvaluationClass.class
+pages\AssignTaskSupervisiorClass.class
+pages\ExternalUserLogin.class
+pages\ApproveCaseReport.class
+pages\AssignEvaluatorClass.class
+pages\TaskPage.class
+pages\ApproveRecomendationClass.class
+pages\ApproveTaskandAssetsfromSupervisiorClass.class
+pages\FilldataJusticWriterClass.class
+pages\RequestEvaluatorClass.class
+pages\AddNewProject.class
+pages\AddRecomendationClass.class
+pages\UserLogin.class
