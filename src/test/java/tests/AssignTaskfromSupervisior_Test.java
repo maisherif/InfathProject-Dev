@@ -2,9 +2,7 @@ package tests;
 
 
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 
 import org.testng.annotations.Test;
 
@@ -13,6 +11,10 @@ import pages.UserLogin;
 
 public class AssignTaskfromSupervisior_Test extends TestBase{
 	
+	public class TotalAssest {
+	    public int totalassets;
+	}
+	
 	UserLogin userlogin; //object from userlogin page
 	AssignTaskSupervisiorClass assigntaskfromsupervisior;
 	JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -20,6 +22,7 @@ public class AssignTaskfromSupervisior_Test extends TestBase{
 		super();
 		this.url = "internal"; // send url type to Testbase Class
 	}
+	
 	@Test 
 	public void LoginSuccessfullysuppervisor() throws InterruptedException
 	{
@@ -27,6 +30,9 @@ public class AssignTaskfromSupervisior_Test extends TestBase{
 		userlogin.userlogin("LCS1@ads.infath.sa", "Infath@1234");
 	}
 	
+	/**
+	 * @throws InterruptedException
+	 */
 	@Test (enabled = true, dependsOnMethods = {"LoginSuccessfullysuppervisor"})
 	public void Assigndataentry() throws InterruptedException
 	{
@@ -34,6 +40,7 @@ public class AssignTaskfromSupervisior_Test extends TestBase{
 		assigntaskfromsupervisior = new AssignTaskSupervisiorClass(driver);	
 		assigntaskfromsupervisior.suppervisorassigndataentry(); 
 
+		
 	}
 //	@Test (dependsOnMethods = {"Assigndataentry"}, enabled = true )
 //	public void logout1() throws InterruptedException

@@ -1,4 +1,4 @@
-package tests;
+
 
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -65,22 +65,16 @@ public class TestBase {
 //		for(int i=0; i<3; i++){
 //			driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
 //		}
-//		if (url.equalsIgnoreCase("internal")) {
-//			driver.navigate().to("https://172.20.25.21/Eservices_Internal/AssetsList");
-//		} else if (url.equalsIgnoreCase("external")) {
-//			driver.navigate().to("https://172.20.25.21/Eservices_External/Login");
-//		}
-//		//dev
 		if (url.equalsIgnoreCase("internal")) {
-			driver.navigate().to("https://172.20.23.14/Eservices_Internal/AssetsList");
+			driver.navigate().to("https://172.20.25.21/Eservices_Internal/AssetsList");
 		} else if (url.equalsIgnoreCase("external")) {
-			driver.navigate().to("https://172.20.23.14/Eservices_External/Login");
+			driver.navigate().to("https://172.20.25.21/Eservices_External/Login");
 		}
-		//preprod
+		//dev
 //		if (url.equalsIgnoreCase("internal")) {
-//			driver.navigate().to("https://172.20.23.17/Eservices_Internal/Login?CurrentLocale=en-US");
+//			driver.navigate().to("https://172.20.23.14/Eservices_Internal/AssetsList");
 //		} else if (url.equalsIgnoreCase("external")) {
-//			driver.navigate().to("https://172.20.21.13/Eservices_External/AuctionsList");
+//			driver.navigate().to("https://172.20.23.14/Eservices_External/Login");
 //		}
 
 	}

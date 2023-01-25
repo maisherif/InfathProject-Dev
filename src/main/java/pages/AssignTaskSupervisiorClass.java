@@ -26,13 +26,31 @@ public class AssignTaskSupervisiorClass {
 		js.executeScript("arguments[0].click();", button);
 
 	}
+	public String TotalAssets(String TotalAssets)
+	{
+		 String  TotalnoAssets = TotalAssets;
+		 return TotalnoAssets;
+	}
 	WebDriverWait wait;
+	
 	private By newcreatedtasksbutton = By.xpath("(//div[@class='display-flex align-items-center ThemeGrid_Width10']/span[text()='New'])"); //filter new in Task List
 	private By taskname = By.xpath("(//div[@class='display-flex align-items-flex-start']/div[text()='Judicial Decision Number'])[1]");
 	private By assigntaskbutton = By.xpath("//div[@class='tabs-header-tab ph']/div[text()='Assign task']");
 	private By dataentrydropdownlist = By.xpath("//div[@class='dropdown-container OSFillParent']/select");
 	private By assigntodataentry = By.xpath("//button/div[text()='Assign']");
+	private By totalAssets = By.xpath("(//div[text()='Number of Assets']/span)[1]");
 
+	private By checkbox1 = By.xpath("(//input[@type='checkbox'])[1]");
+	
+	 public void SelectassetsAndStartCreate() throws InterruptedException
+	    { 
+	        Thread.sleep(2000);
+//	        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+//	        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//input[@class='checkbox'])[2]"))));
+	        //JavascriptExecutor js = (JavascriptExecutor) driver;
+			WebElement newbutton = driver.findElement(checkbox1);
+			clickButtonJS(newbutton);
+	    }
 	
 	public void suppervisorassigndataentry() throws InterruptedException  
 	{
@@ -42,7 +60,13 @@ public class AssignTaskSupervisiorClass {
 		WebElement newbutton = driver.findElement(newcreatedtasksbutton);
 		wait.until(ExpectedConditions.visibilityOf(newbutton));
 		clickButtonJS(newbutton);
+		
+		WebElement totalnoofassets = driver.findElement(totalAssets);
 
+		System.out.println(totalnoofassets.getText());
+		
+		TotalAssets(totalnoofassets.getText());
+		
 		WebElement tasknameelement = driver.findElement(taskname);
 		wait.until(ExpectedConditions.visibilityOf(tasknameelement));
 		clickButtonJS(tasknameelement);

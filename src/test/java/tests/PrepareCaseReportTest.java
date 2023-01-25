@@ -20,10 +20,13 @@ public class PrepareCaseReportTest extends TestBase{
 	public void LoginExternalUser() throws InterruptedException
 	{
 		externallogin = new ExternalUserLogin(driver);	
-//		externallogin.userlogin("sp-2300000031", "123123123456123"); --dev
-		externallogin.userlogin("3101380793", "123123123456123");
+		externallogin.userlogin("sp-2300000031", "123123123456123");//dev
+//		externallogin.userlogin("3101380793", "123123123456123");
 		//not used
 //		externallogin.userlogin("3101829103", "123123123456123");
+		//preproduc
+//		externallogin.userlogin("1000000016", "123123123456123");
+
 		
 
 	}

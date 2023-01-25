@@ -33,8 +33,8 @@ public class AddRecomendationClass {
 //		private By pendlingonpreparationbutton = By.xpath("(//span[@class='white-space-nowrap'])[2]");
 		private By assetlistbutton = By.xpath("//div[@id='b4-b4-Title']");
 		private By addrecomendationbutton = By.xpath("//span[text()='Add New Recommendation']");
-		private By recomendationdropdownlist = By.xpath("//select[@id='b4-b19-b16-RecommendationType']");
-		private By recomendationdetails = By.xpath("//textarea[@id='b4-b19-b16-TextArea_RecommendationDetails']");
+		private By recomendationdropdownlist = By.xpath("//select[@id='b4-b19-b15-b2-RecommendationType']");
+		private By recomendationdetails = By.xpath("//textarea[@id='b4-b19-b15-b2-TextArea_RecommendationDetails']");
 		private By submitaddingrecomendation = By.xpath("//button[@class='btn btn-primary margin-x-base']");
 		private By searchtasknumberresearcher = By.xpath("//input[@id='b4-Input_Name4']");
 		private By searchbutton2 = By.xpath("//button[text()='Search']");
@@ -57,9 +57,11 @@ public class AddRecomendationClass {
 		
 		public void addrecomendation (String assetnumber) throws InterruptedException
 		{
+			Thread.sleep(1000);
+
 			
 			WebElement button =driver.findElement(assetlistbutton);
-			 clickButtonJS(button);
+			clickButtonJS(button);
 			 
 			Thread.sleep(1000);
 
@@ -80,5 +82,11 @@ public class AddRecomendationClass {
 
 		}
 
+		 private By nextbutton = By.xpath("//button[@aria-label='go to next page']");
+	     public void nextpage() throws InterruptedException
+	 	{
+	 		WebElement element = driver.findElement(nextbutton);
+	 		clickButtonJS(element);
+	 	}
 	
 }

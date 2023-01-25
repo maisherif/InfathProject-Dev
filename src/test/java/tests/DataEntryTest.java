@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import pages.AssignTaskSupervisiorClass;
 import pages.TaskPage;
 import pages.UserLogin;
 
@@ -18,12 +19,14 @@ public class DataEntryTest extends TestBase{
 	}
 	UserLogin userlogin;
 	TaskPage taskpage;
-	JavascriptExecutor js = (JavascriptExecutor) driver;
+	AssignTaskSupervisiorClass assigntask;
 	@Test 
 	public void LoginSuccessfullydataentry() throws InterruptedException
 	{
 		userlogin = new UserLogin(driver);	
-		userlogin.userlogin("LCE2@ads.infath.sa", "Infath@1234");
+//		userlogin.userlogin("LCE2@ads.infath.sa", "Infath@1234"); 
+		userlogin.userlogin("LCE1@ads.infath.sa", "Infath@1234"); 
+
 	}
 	@Test (dependsOnMethods = {"LoginSuccessfullydataentry"} )
 	public void DataEntry() throws InterruptedException, AWTException
