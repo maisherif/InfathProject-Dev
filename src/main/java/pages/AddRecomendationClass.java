@@ -32,10 +32,12 @@ public class AddRecomendationClass {
 		private By taskname = By.xpath("(//div[@class='display-flex align-items-flex-start']/div[text()='Judicial Decision Number'])[1]");
 //		private By pendlingonpreparationbutton = By.xpath("(//span[@class='white-space-nowrap'])[2]");
 		private By assetlistbutton = By.xpath("//div[@id='b4-b4-Title']");
-		private By addrecomendationbutton = By.xpath("//span[text()='Add New Recommendation']");
-		private By recomendationdropdownlist = By.xpath("//select[@id='b4-b19-b15-b2-RecommendationType']");
-		private By recomendationdetails = By.xpath("//textarea[@id='b4-b19-b15-b2-TextArea_RecommendationDetails']");
-		private By submitaddingrecomendation = By.xpath("//button[@class='btn btn-primary margin-x-base']");
+//		private By addrecomendationbutton = By.xpath("//span[text()='Add New Recommendation']");
+//		private By recomendationdropdownlist = By.xpath("//select[@id='b4-b19-b15-b2-RecommendationType']");
+		private By salablebutton = By.xpath("(//div[@class='footer-actions margin-top-base']/button)[3]");
+		
+		private By recomendationdetails = By.xpath("//textarea[@id='b4-b19-b7-TextArea_Recommendation_Details']");
+		private By submitaddingrecomendation = By.xpath("(//button[@class='btn btn-primary ThemeGrid_MarginGutter'])[2]");
 		private By searchtasknumberresearcher = By.xpath("//input[@id='b4-Input_Name4']");
 		private By searchbutton2 = By.xpath("//button[text()='Search']");
 
@@ -51,35 +53,38 @@ public class AddRecomendationClass {
 //			 clickButtonJS(button);
 			 WebElement  button = driver.findElement(taskname);
 			 clickButtonJS(button);
-			
+			 
 		}
 
 		
 		public void addrecomendation (String assetnumber) throws InterruptedException
-		{
-			Thread.sleep(1000);
+		{	Thread.sleep(1000);
 
-			
-			WebElement button =driver.findElement(assetlistbutton);
-			clickButtonJS(button);
-			 
-			Thread.sleep(1000);
+		
+		WebElement button =driver.findElement(assetlistbutton);
+		clickButtonJS(button);
+		 
+		Thread.sleep(1000);
 
-			 By assetinlist = By.xpath(assetnumber);
-			 button =driver.findElement(assetinlist);
-			 clickButtonJS(button);
-			 
-			 button =driver.findElement(addrecomendationbutton);
-			 clickButtonJS(button);
-			 
-			 Select list1value = new Select(driver.findElement(recomendationdropdownlist));
-			 list1value.selectByValue("0");
+		 By assetinlist = By.xpath(assetnumber);
+		 button =driver.findElement(assetinlist);
+		 clickButtonJS(button);
+		 
+		 Thread.sleep(2000);
+		 
+//		 button =driver.findElement(addrecomendationbutton);
+//		 clickButtonJS(button);
+		 
+//		 Select list1value = new Select(driver.findElement(recomendationdropdownlist));
+//		 list1value.selectByValue("0");
+		 
+		 button =driver.findElement(salablebutton);
+		 clickButtonJS(button);
 
-			 driver.findElement(recomendationdetails).sendKeys("notess");
-			 
-			 button =driver.findElement(submitaddingrecomendation);
-			 clickButtonJS(button);
-
+		 driver.findElement(recomendationdetails).sendKeys("notess");
+		 
+		 button =driver.findElement(submitaddingrecomendation);
+		 clickButtonJS(button);
 		}
 
 		 private By nextbutton = By.xpath("//button[@aria-label='go to next page']");

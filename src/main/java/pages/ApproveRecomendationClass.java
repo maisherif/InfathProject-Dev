@@ -63,6 +63,11 @@ public class ApproveRecomendationClass {
 			 WebElement button =driver.findElement(index);
 			 clickButtonJS(button);
 		}
-
+		 private By nextbutton = By.xpath("//button[@aria-label='go to next page']");
+	     public void nextpage() throws InterruptedException
+	 	{
+	 		WebElement element = driver.findElement(nextbutton);
+	 		clickButtonJS(element);
+	 	}
 	
 }

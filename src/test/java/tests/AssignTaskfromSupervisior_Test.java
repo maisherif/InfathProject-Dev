@@ -36,19 +36,9 @@ public class AssignTaskfromSupervisior_Test extends TestBase{
 	@Test (enabled = true, dependsOnMethods = {"LoginSuccessfullysuppervisor"})
 	public void Assigndataentry() throws InterruptedException
 	{
-		
 		assigntaskfromsupervisior = new AssignTaskSupervisiorClass(driver);	
 		assigntaskfromsupervisior.suppervisorassigndataentry(); 
 
-		
 	}
-//	@Test (dependsOnMethods = {"Assigndataentry"}, enabled = true )
-//	public void logout1() throws InterruptedException
-//	{
-//		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].click();", logoutbutton);
-//		System.out.println(driver.getCurrentUrl());
-//	}
 
 }

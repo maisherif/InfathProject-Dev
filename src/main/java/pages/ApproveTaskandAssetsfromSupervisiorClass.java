@@ -28,7 +28,7 @@ public class ApproveTaskandAssetsfromSupervisiorClass {
 	        private By pendingoninitialapprovalbutton = By.xpath("(//div[@class='display-flex align-items-center ThemeGrid_Width10']/span)[5]");
 			private By assigntask_button = By.id("b4-b5-Title");
 			private By ResearcherName_dropdownlist = By.xpath("(//div[@class='dropdown-container OSFillParent']/select)[2]");
-			private By ApproverName_dropdownlist = By.xpath("(//div[@class='dropdown-container OSFillParent']/select)[2]");
+//			private By ApproverName_dropdownlist = By.xpath("(//div[@class='dropdown-container OSFillParent']/select)[2]");
 			private By Assign_button = By.xpath("//div[@class='OSInline']/button");
 			private By taskname = By.xpath("(//div[@class='display-flex align-items-flex-start']/div[text()='Judicial Decision Number'])[1]");
 
@@ -49,8 +49,8 @@ public class ApproveTaskandAssetsfromSupervisiorClass {
 		Select listvalue = new Select(driver.findElement(ResearcherName_dropdownlist));
 		listvalue.selectByVisibleText("LegalConsultation Researcher2");
 		
-		Select listvalue2 = new Select(driver.findElement(ApproverName_dropdownlist));
-		listvalue2.selectByVisibleText("LegalConsultation Approval2");
+//		Select listvalue2 = new Select(driver.findElement(ApproverName_dropdownlist));
+//		listvalue2.selectByVisibleText("LegalConsultation Approval2");
 		
 		WebElement Assigntask = driver.findElement(Assign_button);
 		clickButtonJS(Assigntask);

@@ -3,15 +3,34 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ApproverecomendationTest">
+      <class name="ProjectsTests.DirectAssignmentTest">
         <methods>
-          <include name="logout3"/>
-          <include name="Closedriver"/>
-          <include name="approverecomendation"/>
-          <include name="loginLegalConsultationapproval2"/>
+          <include name="AssignSP"/>
+          <include name="LoginSuccessfullyComitteeHead"/>
+          <include name="QASelectProject"/>
+          <include name="LoginSuccessfullyProcurement"/>
+          <include name="MemberLogout2"/>
           <include name="Startdriver"/>
+          <include name="QALogout"/>
+          <include name="SendRecommendation"/>
+          <include name="HeadOpenProject"/>
+          <include name="HeadLogout"/>
+          <include name="HeadApprove"/>
+          <include name="LoginSuccessfullyCEO"/>
+          <include name="LoginSuccessfullyMember"/>
+          <include name="ProcurementSendProject"/>
+          <include name="LoginSuccessfullyMember2"/>
+          <include name="MemberSendRecommendation2"/>
+          <include name="ProcurementLogout"/>
+          <include name="CEOApprove"/>
+          <include name="MemberSelectProject"/>
+          <include name="LoginSuccessfullyQA"/>
+          <include name="MemberSelectProject2"/>
+          <include name="ProcurementSelectProject"/>
+          <include name="MemberLogout"/>
+          <include name="CEPOpenProject"/>
         </methods>
-      </class> <!-- tests.ApproverecomendationTest -->
+      </class> <!-- ProjectsTests.DirectAssignmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,5 @@
-package tests;
 
+package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -30,14 +30,6 @@ public class AssignEvaluatorTest extends TestBase{
 	public void AssignEvaluator() throws InterruptedException
 	{
 		assignevaluator = new AssignEvaluatorClass(driver);
-		assignevaluator.assignresposible();
-	}
-	@Test (dependsOnMethods = {"AssignEvaluator"}, enabled = true )
-	public void logout2() throws InterruptedException
-	{
-		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", logoutbutton);
-		System.out.println(driver.getCurrentUrl());
+		assignevaluator.assignresposible("(//a[@href='#']/i[@class='icon fa fa-eye fa-1x'])[1]","Test email");
 	}
 }

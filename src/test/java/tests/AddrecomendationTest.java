@@ -33,13 +33,12 @@ public class AddrecomendationTest extends TestBase{
 		
 		addrecomendation = new AddRecomendationClass(driver);
 		addrecomendation.opentask("122456789000");
-		for(int i=1;i<=10;i++)
-		{
+		for(int i=1;i<=10;i++)		{ 
 			if(i>=9)
 			{
 				for(int j=1;j<=2;j++) {
 				addrecomendation.nextpage();
-				addrecomendation.addrecomendation("(//div[@class='display-flex align-items-flex-start']/div[text()='Asset Number'])["+i+"]");
+				addrecomendation.addrecomendation("(//div[@class='display-flex align-items-flex-start']/div[text()='Asset Number'])["+j+"]");
 				}
 				break;
 			}

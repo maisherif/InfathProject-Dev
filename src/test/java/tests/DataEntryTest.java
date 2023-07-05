@@ -24,9 +24,7 @@ public class DataEntryTest extends TestBase{
 	public void LoginSuccessfullydataentry() throws InterruptedException
 	{
 		userlogin = new UserLogin(driver);	
-//		userlogin.userlogin("LCE2@ads.infath.sa", "Infath@1234"); 
 		userlogin.userlogin("LCE1@ads.infath.sa", "Infath@1234"); 
-
 	}
 	@Test (dependsOnMethods = {"LoginSuccessfullydataentry"} )
 	public void DataEntry() throws InterruptedException, AWTException

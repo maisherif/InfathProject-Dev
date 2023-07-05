@@ -30,16 +30,29 @@ public class AssignEvaluatorClass {
 	
 	
 	//user  Purchasing Employee
-	private By eyeiconbutton = By.xpath("(//a[@href='#']/i[@class='icon fa fa-eye fa-1x'])[1]");
 	private By dropdownlist = By.xpath("//div[@class='choices']");
 	private By searchtextbox = By.xpath("//input[@class='choices__input choices__input--cloned']");
 	private By evaluatordropdownlist = By.xpath("//div[@id='choices--b4-b2-DropdownSelect-item-choice-3']");
 	private By saveevaluator = By.xpath("//div[@class='OSInline']/button");
 
-	public void assignresposible() 
+	private By requestsandinvoicesbutton = By.xpath("//div[@id='b3-b1-Menu']");
+
+	private By requestsbutton = By.xpath("(//a[text()='Requests'])[2]");
+	public void openrequest() throws InterruptedException
 	{
-		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(eyeiconbutton)));
+		WebElement requests = driver.findElement(requestsandinvoicesbutton);
+		clickButtonJS(requests);
+		
+		requests = driver.findElement(requestsbutton);
+		clickButtonJS(requests);
+		
+		Thread.sleep(2000);
+	}
+	public void assignresposible(String eyeicon, String evaluatorname) 
+	{
+		
+		
+		By eyeiconbutton = By.xpath(eyeicon);
 		
 		WebElement eyeiconbuttonelement = driver.findElement(eyeiconbutton);
 		clickButtonJS(eyeiconbuttonelement);
@@ -48,7 +61,7 @@ public class AssignEvaluatorClass {
 		clickButtonJS(dropsownlistelement);
 		  
 		WebElement search = driver.findElement(searchtextbox);
-		search.sendKeys("شركة معايير للتقييم");
+		search.sendKeys(evaluatorname);
 		
 		search.sendKeys(Keys.ENTER);
 

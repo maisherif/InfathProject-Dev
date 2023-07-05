@@ -54,7 +54,7 @@ public class AssignTaskSupervisiorClass {
 	
 	public void suppervisorassigndataentry() throws InterruptedException  
 	{
-		Thread.sleep(2000);
+//		Thread.sleep(100);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 				
 		WebElement newbutton = driver.findElement(newcreatedtasksbutton);
@@ -81,16 +81,15 @@ public class AssignTaskSupervisiorClass {
 		WebElement dataentrydropdownlistelement = driver.findElement(dataentrydropdownlist);
 		wait.until(ExpectedConditions.visibilityOf(dataentrydropdownlistelement));
 
-        Select listvalue = new Select(dataentrydropdownlistelement);
-		listvalue.selectByVisibleText("LegalConsultation Entry2");
 		
-		//devenv
-//	    Select listvalue = new Select(driver.findElement(dataentrydropdownlist));
-//		listvalue.selectByValue("3");
+//		devenv
+	    Select listvalue = new Select(driver.findElement(dataentrydropdownlist));
+		listvalue.selectByValue("3");
 		
 		WebElement assigntodataentryelement = driver.findElement(assigntodataentry);
 		clickButtonJS(assigntodataentryelement);
 
+		
 	}
 	
 	

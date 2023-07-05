@@ -49,11 +49,13 @@ public class TaskPage {
 	
 		private By selectclaimtype = By.xpath("//select[@id='b4-b13-Claim_Type']");
 		private By ExecutionRequestTypedropdownlist = By.xpath("//select[@id='b4-b13-Request_TypeDDL']");
+		private By claimTypedropdownlist = By.xpath("//select[@id='b4-b13-Claim_Type']");
+
 		private By ibantextbox = By.xpath("//input[@id='b4-b13-Input_IBAN']");
 		private By JudicialDecisionTpedropdownlist = By.xpath("//select[@id='b4-b13-JudicialDecisionType']");
 		private By ExecutionDeedNumberTextbox = By.xpath("//input[@id='b4-b13-Input_Execution_Deed_Number']");
-		private By subcourtdropdownlist = By.xpath("//select[@id='b4-b13-LC_Sub_CourtDDL']");
-		private By courtdropdownlist = By.xpath("//select[@id='b4-b13-LC_CourtDDL']");
+		private By subcourtdropdownlist = By.xpath("//select[@id='b4-b13-AssigningCourtDDL']");
+		private By courtdropdownlist = By.xpath("//select[@id='b4-b13-Assigning_Sub_CourtDDL']");
 
 //		private By region = By.xpath("//div[@id='b4-b13-RegionDDL-container']/select");
 //		private By city = By.xpath("//div[@id='b4-b13-CityDDL-container']/select");
@@ -88,6 +90,9 @@ public class TaskPage {
 		
 		Select listvalue1 = new Select(driver.findElement(ExecutionRequestTypedropdownlist));
 		listvalue1.selectByValue("1");
+		
+		Select listvalue2 = new Select(driver.findElement(claimTypedropdownlist));
+		listvalue2.selectByValue("1");
 		
 		driver.findElement(ibantextbox).sendKeys(iban);
 //		driver.findElement(JudicialDecisionNumbertextbox).sendKeys(JudicialDecisionNumber);
@@ -128,8 +133,8 @@ public class TaskPage {
 			
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 			
-		Select listvalue2 = new Select(driver.findElement(ExecutionDeed_dropdownlist));
-		listvalue2.selectByIndex(2);
+		Select listvaluee = new Select(driver.findElement(ExecutionDeed_dropdownlist));
+		listvaluee.selectByIndex(2);
 		
 
 		String filename="abc.pdf";
@@ -261,7 +266,7 @@ public class TaskPage {
 	private By dateofbirth_textbox = By.xpath("//input[@id='b4-b19-b7-b15-b3-Input_DateVar']");
 	private By ownershippercentage_textbox = By.xpath("//input[@id='b4-b19-b7-b15-Percentage']");
 	private By saveassetbutton = By.xpath("(//div[@id='b4-b19-b7-b15-b6-Button']/button[@class='btn btn-primary'])");
-	private By approveassetbutton = By.xpath("//button[text()='Approve']");
+	private By approveassetbutton = By.xpath("//button/span[text()='Approve']");
 	private By confirmapproveassetbutton = By.xpath("//div[@class='footer-actions margin-top-base']/button[text()='Approve']");
 	
 public void addassetsentry(String assettitlepath,String Schema,String PartNumber,String area, String LengthFromSouth, String LengthFromNorth, String BorderFromEast, String BorderFromWest, String LengthFromEast, String LengthFromWest,String NameOfOwner,String ownerid, String ownername, String dateofbirth, String percantage) throws InterruptedException 
@@ -285,19 +290,19 @@ public void addassetsentry(String assettitlepath,String Schema,String PartNumber
 	wait.until(ExpectedConditions.visibilityOf(asset1titleement));
 	clickButtonJS(asset1titleement);
 	
-//	wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+	wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	
 	
-	driver.findElement(subtypetextbox).sendKeys("Sub Type text");
-
-	Select list2value = new Select(driver.findElement(Propertystatus_dropdownlist));
-	list2value.selectByValue("0");
+//	driver.findElement(subtypetextbox).sendKeys("Sub Type text");
 	
 	 Select listvalue2 = new Select(driver.findElement(PropertyDeedType_dropdownlist));
-	 listvalue2.selectByIndex(2);
+	 listvalue2.selectByValue("3");
+	 
+	Select list2value = new Select(driver.findElement(Propertystatus_dropdownlist));
+	list2value.selectByValue("0");
 	 
 	 Select listvalue3 = new Select(driver.findElement(Issaleforthewholeproprietyorpartofpropriety_dropdownlist));
-	 listvalue3.selectByIndex(1);
+	 listvalue3.selectByVisibleText("Whole");
 	
 	 Select listvalue7 = new Select(driver.findElement(deedregision_dropdownlist));
 	 listvalue7.selectByIndex(6);

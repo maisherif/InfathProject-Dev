@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/5/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 21 11:52:33 EET 2023</td>
+<td>Started on:</td><td>Mon Jun 26 16:31:21 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>712 seconds (712166 ms)</td>
+<tr><td>Total time:</td><td>136 seconds (136706 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,163 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.ApproveCasereportEvaluationmanager.Closedriver()'><b>Closedriver</b><br>Test class: tests.ApproveCasereportEvaluationmanager</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3f8d0b7b-cf7a-4955-be32-beaec24fc47f, close {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:51093, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12940, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51093/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3f8d0b7b-cf7a-4955-be32-beaec24fc47f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-	at tests.TestBase.Closedriver(TestBase.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace300753948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace300753948'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3f8d0b7b-cf7a-4955-be32-beaec24fc47f, close {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:51093, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12940, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51093/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3f8d0b7b-cf7a-4955-be32-beaec24fc47f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-	at tests.TestBase.Closedriver(TestBase.java:90)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.ApproveCasereportEvaluationmanager@25ce9dc4</td></tr>
-<tr>
-<td title='tests.ApproverecomendationTest.Closedriver()'><b>Closedriver</b><br>Test class: tests.ApproverecomendationTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: WebDriver session does not exist, or is not active
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e47ca1fe-f044-48b3-92e9-23b141549ce7, close {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:59737, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9252, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:59737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e47ca1fe-f044-48b3-92e9-23b141549ce7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-	at tests.TestBase.Closedriver(TestBase.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1510177250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1510177250'><pre>org.openqa.selenium.NoSuchSessionException: WebDriver session does not exist, or is not active
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e47ca1fe-f044-48b3-92e9-23b141549ce7, close {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:59737, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9252, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:59737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e47ca1fe-f044-48b3-92e9-23b141549ce7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-	at tests.TestBase.Closedriver(TestBase.java:90)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.ApproverecomendationTest@76b1e9b8</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -233,93 +76,15 @@ Session ID: e47ca1fe-f044-48b3-92e9-23b141549ce7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ApproveCaseReportbyEvaluationEmployee.employeeevaluation()'><b>employeeevaluation</b><br>Test class: tests.ApproveCaseReportbyEvaluationEmployee</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;b4-b17-b1-SearchSource2&quot; class=&quot;form-control OSFillParent&quot; type=&quot;search&quot;&gt; is not reachable by keyboard
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [28c55ab5-6e98-4532-b2d4-3228be47d11d, sendKeysToElement {id=51e7d250-7139-4652-a4fa-22a492bab6bf, value=[Ljava.lang.CharSequence;@e7b7395}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:51743, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26144, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51743/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (28c55ab5-6e98-4532-b2d4-3228be47d11d)] -&gt; xpath: //input[@id=&apos;b4-b17-b1-SearchSource2&apos;]]
-Session ID: 28c55ab5-6e98-4532-b2d4-3228be47d11d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pages.ApproveCaseReport.evaluationemployee(ApproveCaseReport.java:67)
-	at tests.ApproveCaseReportbyEvaluationEmployee.employeeevaluation(ApproveCaseReportbyEvaluationEmployee.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318266824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace318266824'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;b4-b17-b1-SearchSource2&quot; class=&quot;form-control OSFillParent&quot; type=&quot;search&quot;&gt; is not reachable by keyboard
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [28c55ab5-6e98-4532-b2d4-3228be47d11d, sendKeysToElement {id=51e7d250-7139-4652-a4fa-22a492bab6bf, value=[Ljava.lang.CharSequence;@e7b7395}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:51743, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26144, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51743/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (28c55ab5-6e98-4532-b2d4-3228be47d11d)] -&gt; xpath: //input[@id=&apos;b4-b17-b1-SearchSource2&apos;]]
-Session ID: 28c55ab5-6e98-4532-b2d4-3228be47d11d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pages.ApproveCaseReport.evaluationemployee(ApproveCaseReport.java:67)
-	at tests.ApproveCaseReportbyEvaluationEmployee.employeeevaluation(ApproveCaseReportbyEvaluationEmployee.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>40</td>
-<td>tests.ApproveCaseReportbyEvaluationEmployee@173ed316</td></tr>
-<tr>
-<td title='tests.FillDataJusticWriterTest.justicwriterapproval()'><b>justicwriterapproval</b><br>Test class: tests.FillDataJusticWriterTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@class=&apos;btn btn-primary OSFillParent&apos;]
+<td title='ProjectsTests.assignSaleCommitteeTest.AddSaleLetter()'><b>AddSaleLetter</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//span[@class=&apos;white-space-nowrap text-ellipsis&apos;])[4]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3db055e5-361f-4a5a-975f-8574be3b6e4b, findElement {using=xpath, value=//button[@class=&apos;btn btn-primary OSFillParent&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:62639, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23964, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:62639/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3db055e5-361f-4a5a-975f-8574be3b6e4b
+Command: [ee145295-d36b-4b88-be45-e6145a203466, findElement {using=xpath, value=(//span[@class=&apos;white-space-nowrap text-ellipsis&apos;])[4]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:49239, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 34236, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:49239/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ee145295-d36b-4b88-be45-e6145a203466
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -331,18 +96,18 @@ Session ID: 3db055e5-361f-4a5a-975f-8574be3b6e4b
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.FilldataJusticWriterClass.justicwriterapproval(FilldataJusticWriterClass.java:81)
-	at tests.FillDataJusticWriterTest.justicwriterapproval(FillDataJusticWriterTest.java:37)
+	at ProjectsPages.assignSaleComittee.AddSellLetter(assignSaleComittee.java:126)
+	at ProjectsTests.assignSaleCommitteeTest.AddSaleLetter(assignSaleCommitteeTest.java:96)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1966193235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1966193235'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@class=&apos;btn btn-primary OSFillParent&apos;]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace891327883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace891327883'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//span[@class=&apos;white-space-nowrap text-ellipsis&apos;])[4]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3db055e5-361f-4a5a-975f-8574be3b6e4b, findElement {using=xpath, value=//button[@class=&apos;btn btn-primary OSFillParent&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:62639, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23964, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:62639/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3db055e5-361f-4a5a-975f-8574be3b6e4b
+Command: [ee145295-d36b-4b88-be45-e6145a203466, findElement {using=xpath, value=(//span[@class=&apos;white-space-nowrap text-ellipsis&apos;])[4]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:49239, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 34236, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:49239/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ee145295-d36b-4b88-be45-e6145a203466
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -359,8 +124,8 @@ Session ID: 3db055e5-361f-4a5a-975f-8574be3b6e4b
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.FilldataJusticWriterClass.justicwriterapproval(FilldataJusticWriterClass.java:81)
-	at tests.FillDataJusticWriterTest.justicwriterapproval(FillDataJusticWriterTest.java:37)
+	at ProjectsPages.assignSaleComittee.AddSellLetter(assignSaleComittee.java:126)
+	at ProjectsTests.assignSaleCommitteeTest.AddSaleLetter(assignSaleCommitteeTest.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -390,250 +155,8 @@ Session ID: 3db055e5-361f-4a5a-975f-8574be3b6e4b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>154</td>
-<td>tests.FillDataJusticWriterTest@74ea2410</td></tr>
-<tr>
-<td title='tests.ApproveCasereportEvaluationmanager.managmentevaluation()'><b>managmentevaluation</b><br>Test class: tests.ApproveCasereportEvaluationmanager</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3f8d0b7b-cf7a-4955-be32-beaec24fc47f, findElement {using=id, value=b4-b17-b1-b27-Btn_EvaluationManager_Approve}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:51093, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12940, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51093/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3f8d0b7b-cf7a-4955-be32-beaec24fc47f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.ApproveCaseReport.evaluationmanager(ApproveCaseReport.java:109)
-	at tests.ApproveCasereportEvaluationmanager.managmentevaluation(ApproveCasereportEvaluationmanager.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace460628066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace460628066'><pre>org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3f8d0b7b-cf7a-4955-be32-beaec24fc47f, findElement {using=id, value=b4-b17-b1-b27-Btn_EvaluationManager_Approve}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:51093, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12940, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51093/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3f8d0b7b-cf7a-4955-be32-beaec24fc47f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.ApproveCaseReport.evaluationmanager(ApproveCaseReport.java:109)
-	at tests.ApproveCasereportEvaluationmanager.managmentevaluation(ApproveCasereportEvaluationmanager.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>45</td>
-<td>tests.ApproveCasereportEvaluationmanager@25ce9dc4</td></tr>
-<tr>
-<td title='tests.ApproverecomendationTest.approverecomendation()'><b>approverecomendation</b><br>Test class: tests.ApproverecomendationTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e47ca1fe-f044-48b3-92e9-23b141549ce7, findElement {using=xpath, value=(//div[@class=&apos;display-flex align-items-flex-start&apos;]/div[text()=&apos;Judicial Decision Number&apos;])[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:59737, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9252, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:59737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e47ca1fe-f044-48b3-92e9-23b141549ce7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.ApproveRecomendationClass.opentask(ApproveRecomendationClass.java:43)
-	at tests.ApproverecomendationTest.approverecomendation(ApproverecomendationTest.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1552603831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1552603831'><pre>org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e47ca1fe-f044-48b3-92e9-23b141549ce7, findElement {using=xpath, value=(//div[@class=&apos;display-flex align-items-flex-start&apos;]/div[text()=&apos;Judicial Decision Number&apos;])[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:59737, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9252, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:59737/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e47ca1fe-f044-48b3-92e9-23b141549ce7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.ApproveRecomendationClass.opentask(ApproveRecomendationClass.java:43)
-	at tests.ApproverecomendationTest.approverecomendation(ApproverecomendationTest.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>tests.ApproverecomendationTest@76b1e9b8</td></tr>
-<tr>
-<td title='tests.AddrecomendationTest.addrecomendation()'><b>addrecomendation</b><br>Test class: tests.AddrecomendationTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class=&apos;display-flex align-items-flex-start&apos;]/div[text()=&apos;Asset Number&apos;])[2]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b32da1da-e7a7-4db3-ab3a-3f0b5311585a, findElement {using=xpath, value=(//div[@class=&apos;display-flex align-items-flex-start&apos;]/div[text()=&apos;Asset Number&apos;])[2]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:65500, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5348, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:65500/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b32da1da-e7a7-4db3-ab3a-3f0b5311585a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.AddRecomendationClass.addrecomendation(AddRecomendationClass.java:67)
-	at tests.AddrecomendationTest.addrecomendation(AddrecomendationTest.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1153079397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1153079397'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class=&apos;display-flex align-items-flex-start&apos;]/div[text()=&apos;Asset Number&apos;])[2]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MAISHERIF&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b32da1da-e7a7-4db3-ab3a-3f0b5311585a, findElement {using=xpath, value=(//div[@class=&apos;display-flex align-items-flex-start&apos;]/div[text()=&apos;Asset Number&apos;])[2]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:65500, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5348, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:65500/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b32da1da-e7a7-4db3-ab3a-3f0b5311585a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pages.AddRecomendationClass.addrecomendation(AddRecomendationClass.java:67)
-	at tests.AddrecomendationTest.addrecomendation(AddrecomendationTest.java:47)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>34</td>
-<td>tests.AddrecomendationTest@17f62e33</td></tr>
+<td>20</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -644,259 +167,90 @@ Session ID: b32da1da-e7a7-4db3-ab3a-3f0b5311585a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RequestEvaluatorTest.logout1()'><b>logout1</b><br>Test class: tests.RequestEvaluatorTest</td>
-<td></td>
-<td>0</td>
-<td>tests.RequestEvaluatorTest@2cf3d63b</td></tr>
-<tr>
-<td title='tests.AssignEvaluatorTest.LoginSuccessfullyPurchasingdepartment()'><b>LoginSuccessfullyPurchasingdepartment</b><br>Test class: tests.AssignEvaluatorTest</td>
-<td></td>
-<td>7</td>
-<td>tests.AssignEvaluatorTest@7674f035</td></tr>
-<tr>
-<td title='tests.DataEntryTest.DataEntry()'><b>DataEntry</b><br>Test class: tests.DataEntryTest</td>
-<td></td>
-<td>112</td>
-<td>tests.DataEntryTest@8f2ef19</td></tr>
-<tr>
-<td title='tests.ApprovePendingCreatedTask.LoginSuccessfullysuppervisor2()'><b>LoginSuccessfullysuppervisor2</b><br>Test class: tests.ApprovePendingCreatedTask</td>
-<td></td>
-<td>4</td>
-<td>tests.ApprovePendingCreatedTask@470734c3</td></tr>
-<tr>
-<td title='tests.AssignEvaluatorTest.AssignEvaluator()'><b>AssignEvaluator</b><br>Test class: tests.AssignEvaluatorTest</td>
-<td></td>
-<td>19</td>
-<td>tests.AssignEvaluatorTest@7674f035</td></tr>
-<tr>
-<td title='tests.ApprovePendingCreatedTask.Assigntaskbyserverprovider()'><b>Assigntaskbyserverprovider</b><br>Test class: tests.ApprovePendingCreatedTask</td>
-<td></td>
-<td>17</td>
-<td>tests.ApprovePendingCreatedTask@470734c3</td></tr>
-<tr>
-<td title='tests.ApproveCasereportEvaluationmanager.LoginmanagerEvaluation()'><b>LoginmanagerEvaluation</b><br>Test class: tests.ApproveCasereportEvaluationmanager</td>
-<td></td>
-<td>4</td>
-<td>tests.ApproveCasereportEvaluationmanager@25ce9dc4</td></tr>
-<tr>
-<td title='tests.AssignEvaluatorTest.logout2()'><b>logout2</b><br>Test class: tests.AssignEvaluatorTest</td>
-<td></td>
-<td>0</td>
-<td>tests.AssignEvaluatorTest@7674f035</td></tr>
-<tr>
-<td title='tests.RequestEvaluatorTest.SendhireRequestTest()'><b>SendhireRequestTest</b><br>Test class: tests.RequestEvaluatorTest</td>
-<td></td>
-<td>8</td>
-<td>tests.RequestEvaluatorTest@2cf3d63b</td></tr>
-<tr>
-<td title='tests.AddrecomendationTest.loginLegalConsultationResearcher2()'><b>loginLegalConsultationResearcher2</b><br>Test class: tests.AddrecomendationTest</td>
-<td></td>
-<td>6</td>
-<td>tests.AddrecomendationTest@17f62e33</td></tr>
-<tr>
-<td title='tests.AssignTaskfromSupervisior_Test.LoginSuccessfullysuppervisor()'><b>LoginSuccessfullysuppervisor</b><br>Test class: tests.AssignTaskfromSupervisior_Test</td>
-<td></td>
-<td>9</td>
-<td>tests.AssignTaskfromSupervisior_Test@449a4f23</td></tr>
-<tr>
-<td title='tests.DataEntryTest.LoginSuccessfullydataentry()'><b>LoginSuccessfullydataentry</b><br>Test class: tests.DataEntryTest</td>
-<td></td>
-<td>6</td>
-<td>tests.DataEntryTest@8f2ef19</td></tr>
-<tr>
-<td title='tests.PrepareCaseReportTest.LoginExternalUser()'><b>LoginExternalUser</b><br>Test class: tests.PrepareCaseReportTest</td>
+<td title='ProjectsTests.assignSaleCommitteeTest.ApproveByCEO()'><b>ApproveByCEO</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
 <td></td>
 <td>2</td>
-<td>tests.PrepareCaseReportTest@69e153c5</td></tr>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 <tr>
-<td title='tests.ApproverecomendationTest.loginLegalConsultationapproval2()'><b>loginLegalConsultationapproval2</b><br>Test class: tests.ApproverecomendationTest</td>
+<td title='ProjectsTests.assignSaleCommitteeTest.HeadLogin()'><b>HeadLogin</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
 <td></td>
-<td>4</td>
-<td>tests.ApproverecomendationTest@76b1e9b8</td></tr>
+<td>0</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 <tr>
-<td title='tests.FillDataJusticWriterTest.loginJusticeWriter()'><b>loginJusticeWriter</b><br>Test class: tests.FillDataJusticWriterTest</td>
+<td title='AuctionPlan.AddAuctionTasks.openauctionplan()'><b>openauctionplan</b><br>Test class: AuctionPlan.AddAuctionTasks</td>
 <td></td>
-<td>9</td>
-<td>tests.FillDataJusticWriterTest@74ea2410</td></tr>
+<td>11</td>
+<td>AuctionPlan.AddAuctionTasks@2a7f1f10</td></tr>
 <tr>
-<td title='tests.ApproveCaseReportbyEvaluationEmployee.loginEvaluationEmploee()'><b>loginEvaluationEmploee</b><br>Test class: tests.ApproveCaseReportbyEvaluationEmployee</td>
+<td title='ProjectsTests.assignSaleCommitteeTest.CEOLogin()'><b>CEOLogin</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
 <td></td>
-<td>6</td>
-<td>tests.ApproveCaseReportbyEvaluationEmployee@173ed316</td></tr>
+<td>0</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 <tr>
-<td title='tests.AssignTaskfromSupervisior_Test.Assigndataentry()'><b>Assigndataentry</b><br>Test class: tests.AssignTaskfromSupervisior_Test</td>
-<td></td>
-<td>23</td>
-<td>tests.AssignTaskfromSupervisior_Test@449a4f23</td></tr>
-<tr>
-<td title='tests.RequestEvaluatorTest.LoginSuccessfullyEvaluationManager()'><b>LoginSuccessfullyEvaluationManager</b><br>Test class: tests.RequestEvaluatorTest</td>
+<td title='AuctionPlan.AddAuctionTasks.LoginExternalUser()'><b>LoginExternalUser</b><br>Test class: AuctionPlan.AddAuctionTasks</td>
 <td></td>
 <td>3</td>
-<td>tests.RequestEvaluatorTest@2cf3d63b</td></tr>
+<td>AuctionPlan.AddAuctionTasks@2a7f1f10</td></tr>
 <tr>
-<td title='tests.PrepareCaseReportTest.CaseReportTest()'><b>CaseReportTest</b><br>Test class: tests.PrepareCaseReportTest</td>
+<td title='AuctionPlan.ApproveAutionTasks.LoginPM()'><b>LoginPM</b><br>Test class: AuctionPlan.ApproveAutionTasks</td>
 <td></td>
-<td>115</td>
-<td>tests.PrepareCaseReportTest@69e153c5</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>4</td>
+<td>AuctionPlan.ApproveAutionTasks@54c5a2ff</td></tr>
 <tr>
-<td title='tests.AddrecomendationTest.logout2()'><b>logout2</b><br>Test class: tests.AddrecomendationTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.AddrecomendationTest.logout2() on instance tests.AddrecomendationTest@17f62e33 depends on not successfully finished methods 
-[tests.AddrecomendationTest.addrecomendation() on instance tests.AddrecomendationTest@17f62e33]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1186234780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1186234780'><pre>java.lang.Throwable: Method tests.AddrecomendationTest.logout2() on instance tests.AddrecomendationTest@17f62e33 depends on not successfully finished methods 
-[tests.AddrecomendationTest.addrecomendation() on instance tests.AddrecomendationTest@17f62e33]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.AddrecomendationTest@17f62e33</td></tr>
+<td title='AuctionPlan.AddAuctionTasks.addmaininformationTask()'><b>addmaininformationTask</b><br>Test class: AuctionPlan.AddAuctionTasks</td>
+<td></td>
+<td>15</td>
+<td>AuctionPlan.AddAuctionTasks@2a7f1f10</td></tr>
 <tr>
-<td title='tests.ApproveCaseReportbyEvaluationEmployee.logout1()'><b>logout1</b><br>Test class: tests.ApproveCaseReportbyEvaluationEmployee</td>
-<td><div><pre>java.lang.Throwable: Method tests.ApproveCaseReportbyEvaluationEmployee.logout1() on instance tests.ApproveCaseReportbyEvaluationEmployee@173ed316 depends on not successfully finished methods 
-[tests.ApproveCaseReportbyEvaluationEmployee.employeeevaluation() on instance tests.ApproveCaseReportbyEvaluationEmployee@173ed316]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace73813999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace73813999'><pre>java.lang.Throwable: Method tests.ApproveCaseReportbyEvaluationEmployee.logout1() on instance tests.ApproveCaseReportbyEvaluationEmployee@173ed316 depends on not successfully finished methods 
-[tests.ApproveCaseReportbyEvaluationEmployee.employeeevaluation() on instance tests.ApproveCaseReportbyEvaluationEmployee@173ed316]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.ApproveCaseReportbyEvaluationEmployee@173ed316</td></tr>
+<td title='ProjectsTests.assignSaleCommitteeTest.OpenAuction()'><b>OpenAuction</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
+<td>2</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 <tr>
-<td title='tests.ApproverecomendationTest.logout3()'><b>logout3</b><br>Test class: tests.ApproverecomendationTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.ApproverecomendationTest.logout3() on instance tests.ApproverecomendationTest@76b1e9b8 depends on not successfully finished methods 
-[tests.ApproverecomendationTest.approverecomendation() on instance tests.ApproverecomendationTest@76b1e9b8]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace594462612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace594462612'><pre>java.lang.Throwable: Method tests.ApproverecomendationTest.logout3() on instance tests.ApproverecomendationTest@76b1e9b8 depends on not successfully finished methods 
-[tests.ApproverecomendationTest.approverecomendation() on instance tests.ApproverecomendationTest@76b1e9b8]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.ApproverecomendationTest@76b1e9b8</td></tr>
+<td title='ProjectsTests.assignSaleCommitteeTest.ChooseHead()'><b>ChooseHead</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
+<td>1</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 <tr>
-<td title='tests.ApproveCasereportEvaluationmanager.logout2()'><b>logout2</b><br>Test class: tests.ApproveCasereportEvaluationmanager</td>
-<td><div><pre>java.lang.Throwable: Method tests.ApproveCasereportEvaluationmanager.logout2() on instance tests.ApproveCasereportEvaluationmanager@25ce9dc4 depends on not successfully finished methods 
-[tests.ApproveCasereportEvaluationmanager.managmentevaluation() on instance tests.ApproveCasereportEvaluationmanager@25ce9dc4]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369789318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace369789318'><pre>java.lang.Throwable: Method tests.ApproveCasereportEvaluationmanager.logout2() on instance tests.ApproveCasereportEvaluationmanager@25ce9dc4 depends on not successfully finished methods 
-[tests.ApproveCasereportEvaluationmanager.managmentevaluation() on instance tests.ApproveCasereportEvaluationmanager@25ce9dc4]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.ApproveCasereportEvaluationmanager@25ce9dc4</td></tr>
+<td title='ProjectsTests.assignSaleCommitteeTest.QALogin()'><b>QALogin</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
+<td>3</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
 <tr>
-<td title='tests.FillDataJusticWriterTest.logout1()'><b>logout1</b><br>Test class: tests.FillDataJusticWriterTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.FillDataJusticWriterTest.logout1() on instance tests.FillDataJusticWriterTest@74ea2410 depends on not successfully finished methods 
-[tests.FillDataJusticWriterTest.justicwriterapproval() on instance tests.FillDataJusticWriterTest@74ea2410]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49288974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace49288974'><pre>java.lang.Throwable: Method tests.FillDataJusticWriterTest.logout1() on instance tests.FillDataJusticWriterTest@74ea2410 depends on not successfully finished methods 
-[tests.FillDataJusticWriterTest.justicwriterapproval() on instance tests.FillDataJusticWriterTest@74ea2410]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='ProjectsTests.assignSaleCommitteeTest.QALogout()'><b>QALogout</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
 <td>0</td>
-<td>tests.FillDataJusticWriterTest@74ea2410</td></tr>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
+<tr>
+<td title='ProjectsTests.assignSaleCommitteeTest.CEOLogout()'><b>CEOLogout</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
+<td>0</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
+<tr>
+<td title='ProjectsTests.assignSaleCommitteeTest.OpenCommitteeTab()'><b>OpenCommitteeTab</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
+<td>8</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
+<tr>
+<td title='AuctionPlan.AddAuctionTasks.addutilitybills()'><b>addutilitybills</b><br>Test class: AuctionPlan.AddAuctionTasks</td>
+<td></td>
+<td>11</td>
+<td>AuctionPlan.AddAuctionTasks@2a7f1f10</td></tr>
+<tr>
+<td title='ProjectsTests.assignSaleCommitteeTest.OpenAuctionsList()'><b>OpenAuctionsList</b><br>Test class: ProjectsTests.assignSaleCommitteeTest</td>
+<td></td>
+<td>6</td>
+<td>ProjectsTests.assignSaleCommitteeTest@6d4d66d2</td></tr>
+<tr>
+<td title='AuctionPlan.AddAuctionTasks.openauctionplan2()'><b>openauctionplan2</b><br>Test class: AuctionPlan.AddAuctionTasks</td>
+<td></td>
+<td>1</td>
+<td>AuctionPlan.AddAuctionTasks@2a7f1f10</td></tr>
+<tr>
+<td title='AuctionPlan.ApproveAutionTasks.approveTasks()'><b>approveTasks</b><br>Test class: AuctionPlan.ApproveAutionTasks</td>
+<td></td>
+<td>28</td>
+<td>AuctionPlan.ApproveAutionTasks@54c5a2ff</td></tr>
 </table><p>
 </body>
 </html>

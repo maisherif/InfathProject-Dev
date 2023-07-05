@@ -27,20 +27,12 @@ public class ApproveCaseReportbyEvaluationEmployee extends TestBase{
 	@Test (dependsOnMethods = {"loginEvaluationEmploee"}) 
 	public void employeeevaluation() throws InterruptedException
 	{
-		for(int i=1;i<=8;i++)
+		for(int i=0;i<7;i++)
 		{
 			approvecasereport = new ApproveCaseReport(driver);
 			approvecasereport.evaluationemployee("(//div[@class='display-flex align-items-flex-start']/div[@class='display-flex flex-direction-column'])[1]");
 
 		}
-	}
-	@Test (dependsOnMethods = {"employeeevaluation"})
-	public void logout1() throws InterruptedException
-	{
-		WebElement logoutbutton = driver.findElement(By.id("b2-b3-Icon3"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", logoutbutton);
-		System.out.println(driver.getCurrentUrl());
 	}
 	
 	

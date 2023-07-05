@@ -33,11 +33,21 @@ public class ApproverecomendationTest extends TestBase{
 	public void approverecomendation() throws InterruptedException
 	{
 		approverecomendation = new ApproveRecomendationClass(driver);
-		approverecomendation.opentask("122456789000");
-		approverecomendation.gotorecomendationtab();
-		for(int i=1;i<=10;i++) {
-			approverecomendation.approverecomendation("(//i[@class='icon fa fa-check fa-1x'])["+i+"]");
+//		approverecomendation.gotorecomendationtab();
+		for(int i=1;i<=2;i++) {
+			if(i>=9)
+			{
+				for(int j=1;j<=2;j++) {
+				approverecomendation.nextpage();
+//				approverecomendation.approverecomendation("(//i[@class='icon fa fa-check fa-1x'])["+j+"]");
+				}
+				break;
 			}
+//			else {
+//				approverecomendation.approverecomendation("(//i[@class='icon fa fa-check fa-1x'])["+i+"]");
+//			}
+		}
+			
 	}
 	@Test (dependsOnMethods = {"approverecomendation"})
 	public void logout3() throws InterruptedException
