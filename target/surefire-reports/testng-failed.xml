@@ -9,11 +9,7 @@
           <include name="ChooseHead"/>
           <include name="OpenCommitteeTab"/>
           <include name="Startdriver"/>
-          <include name="CEOLogin"/>
           <include name="ApproveByCEO"/>
-          <include name="HeadLogin"/>
-          <include name="CEOLogout"/>
-          <include name="QALogout"/>
         </methods>
       </class> <!-- ProjectsTests.assignSaleCommitteeTest -->
     </classes>

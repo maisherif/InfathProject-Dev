@@ -3,7 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="ProjectsTests.assignSaleCommitteeTest"/>
-    </classes>
+      <class name="tests.AssignTaskfromSupervisior_Test"/>
+      <class name="tests.DataEntryTest"/>
+      <class name="tests.ApprovePendingCreatedTask"/>
+      <class name="tests.RequestEvaluatorTest"/>
+      <class name="tests.AssignEvaluatorTest"/>
+      <class name="tests.PrepareCaseReportTest"/>
+      <class name="tests.FillDataJusticWriterTest"/>
+      <class name="tests.AddrecomendationTest"/>     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
