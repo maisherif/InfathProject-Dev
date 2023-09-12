@@ -33,7 +33,7 @@ public class AssignTaskSupervisiorClass {
 	}
 	WebDriverWait wait;
 	
-	private By newcreatedtasksbutton = By.xpath("(//div[@class='display-flex align-items-center ThemeGrid_Width10']/span[text()='New'])"); //filter new in Task List
+	private By newcreatedtasksbutton = By.xpath("(//div[@class='display-flex align-items-center margin-right-base OSInline']/span[text()='New'])"); //filter new in Task List
 	private By taskname = By.xpath("(//div[@class='display-flex align-items-flex-start']/div[text()='Judicial Decision Number'])[1]");
 	private By assigntaskbutton = By.xpath("//div[@class='tabs-header-tab ph']/div[text()='Assign task']");
 	private By dataentrydropdownlist = By.xpath("//div[@class='dropdown-container OSFillParent']/select");

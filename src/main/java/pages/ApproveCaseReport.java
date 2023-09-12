@@ -33,7 +33,7 @@ public class ApproveCaseReport {
 		private By indicatedvaluetextbox = By.xpath("//input[@id='b4-b19-b1-IndictiveValue']");
 		private By searchsourcelinktextbox = By.xpath("//input[@id='b4-b19-b1-SearchSourceLink2']");
 		
-		private By sendapproveevaluationbutton = By.xpath("//button[@id='b4-b19-b1-b29-Btn_EvaluationEmployee_Approve']");
+		private By sendapproveevaluationbutton = By.xpath("//button[@id='b4-b19-b1-b31-Btn_EvaluationEmployee_Approve']");
 		private By propertieslistbutton = By.xpath("//div[@class='side-list-items selected']");
 		
 		public void evaluationemployee (String deednumber) throws InterruptedException

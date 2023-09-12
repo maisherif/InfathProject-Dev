@@ -3,12 +3,46 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="ProjectsTests.assignSaleCommitteeTest">
+      <class name="ProjectsTests.DirectAssignmentTest">
         <methods>
-          <include name="AddSaleLetter"/>
+          <include name="AssignSP"/>
+          <include name="LoginSuccessfullyComitteeHead"/>
+          <include name="QASelectProject"/>
+          <include name="Startdriver"/>
+          <include name="MemberLogout2"/>
+          <include name="QALogout"/>
+          <include name="SendRecommendation"/>
+          <include name="HeadOpenProject"/>
+          <include name="HeadLogout"/>
+          <include name="HeadApprove"/>
+          <include name="LoginSuccessfullyCEO"/>
+          <include name="LoginSuccessfullyMember"/>
+          <include name="ProcurementSendProject"/>
+          <include name="LoginSuccessfullyMember2"/>
+          <include name="MemberSendRecommendation2"/>
+          <include name="ProcurementLogout"/>
+          <include name="CEOApprove"/>
+          <include name="MemberSelectProject"/>
+          <include name="LoginSuccessfullyQA"/>
+          <include name="MemberLogout"/>
+          <include name="ProcurementSelectProject"/>
+          <include name="MemberSelectProject2"/>
+          <include name="CEPOpenProject"/>
+        </methods>
+      </class> <!-- ProjectsTests.DirectAssignmentTest -->
+      <class name="ProjectsTests.SPApproveAssigningTest">
+        <methods>
+          <include name="Approve"/>
           <include name="Startdriver"/>
         </methods>
-      </class> <!-- ProjectsTests.assignSaleCommitteeTest -->
+      </class> <!-- ProjectsTests.SPApproveAssigningTest -->
+      <class name="ProjectPlanTests.AssignProjectManagerTest">
+        <methods>
+          <include name="LoginPortofolioManager"/>
+          <include name="Startdriver"/>
+          <include name="assignpm"/>
+        </methods>
+      </class> <!-- ProjectPlanTests.AssignProjectManagerTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,6 @@
 package AuctionPlanPages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -41,6 +42,7 @@ public class AuctionPlanClass {
 	
 	private By auctionplantab = By.xpath("//div[@id='b5-b5-Title']");
 	
+	private By startdate0 = By.xpath("(//input[@class='form-control OSFillParent'])[7]");
 	private By startdate1 = By.xpath("(//input[@class='form-control OSFillParent'])[8]");
 	private By startdate2 = By.xpath("(//input[@class='form-control OSFillParent'])[10]");
 	private By startdate3 = By.xpath("(//input[@class='form-control OSFillParent'])[12]");
@@ -74,7 +76,6 @@ public class AuctionPlanClass {
 	private By enddate13 = By.xpath("(//input[@class='form-control OSFillParent'])[33]");
 	private By enddate14 = By.xpath("(//input[@class='form-control OSFillParent'])[35]");
 	private By enddate15 = By.xpath("(//input[@class='form-control OSFillParent'])[37]");
-	private By enddate16 = By.xpath("(//input[@class='form-control OSFillParent'])[39]");
 
 	private By sendforapproval = By.xpath("//button[@class='btn btn-primary']");
 	private By approvesubmit = By.xpath("(//div[@class='footer-actions margin-top-base']/button)[2]");
@@ -85,15 +86,16 @@ public class AuctionPlanClass {
 		 clickButtonJS(button);
 	}
 	
-	public void auctionplan(String startdatepar, String enddatepar) throws InterruptedException
+	public void auctionplan(String startdatepar, String enddatepar) throws InterruptedException 
 	{
 		
 		long todaydate = System.currentTimeMillis();
         java.sql.Date date = new java.sql.Date(todaydate);
         String startdate=String.valueOf(date);
         String enddate=String.valueOf(date);
-		
+        
 		 Thread.sleep(1000);
+		 driver.findElement(startdate0).sendKeys(startdate);
 		 driver.findElement(startdate1).sendKeys(startdate);
 		 driver.findElement(startdate2).sendKeys(startdate);
 		 driver.findElement(startdate3).sendKeys(startdate);
@@ -126,7 +128,6 @@ public class AuctionPlanClass {
 		 driver.findElement(enddate13).sendKeys(enddate);
 		 driver.findElement(enddate14).sendKeys(enddate);
 		 driver.findElement(enddate15).sendKeys(enddate);
-		 driver.findElement(enddate16).sendKeys(enddate);
 
 		 WebElement button =driver.findElement(sendforapproval);
 		 clickButtonJS(button);

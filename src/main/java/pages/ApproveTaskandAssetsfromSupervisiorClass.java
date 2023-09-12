@@ -25,7 +25,7 @@ public class ApproveTaskandAssetsfromSupervisiorClass {
 	}
 	WebDriverWait wait;
 	//Assign Task by supervisor
-	        private By pendingoninitialapprovalbutton = By.xpath("(//div[@class='display-flex align-items-center ThemeGrid_Width10']/span)[5]");
+	        private By pendingoninitialapprovalbutton = By.xpath("(//div[@class='display-flex align-items-center margin-right-base OSInline']/span)[5]");
 			private By assigntask_button = By.id("b4-b5-Title");
 			private By ResearcherName_dropdownlist = By.xpath("(//div[@class='dropdown-container OSFillParent']/select)[2]");
 //			private By ApproverName_dropdownlist = By.xpath("(//div[@class='dropdown-container OSFillParent']/select)[2]");

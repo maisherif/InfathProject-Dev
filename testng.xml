@@ -9,7 +9,9 @@
       <class name="tests.RequestEvaluatorTest"/>
       <class name="tests.AssignEvaluatorTest"/>
       <class name="tests.PrepareCaseReportTest"/>
+      <class name="tests.ApproveCaseReportbyEvaluationEmployee"/>
       <class name="tests.FillDataJusticWriterTest"/>
-      <class name="tests.AddrecomendationTest"/>     </classes>
+      <class name="tests.AddrecomendationTest"/> 
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

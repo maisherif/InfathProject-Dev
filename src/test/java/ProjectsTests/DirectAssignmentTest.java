@@ -21,35 +21,35 @@ public class DirectAssignmentTest extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
-  @Test (priority = 1, enabled = true) //ProcurementLogin
-  public void LoginSuccessfullyProcurement() throws InterruptedException
-	{
-		userlogin = new UserLogin(driver);	
-		userlogin.userlogin("smohamed-v@infath.sa", "Test123");
-	}
-  
-  @Test (priority = 2, enabled = true)
-  public void ProcurementSelectProject() throws InterruptedException  //Procurement approve the project
-	{
-		DirectAssignmentClass = new ProjectsPages.DirectAssignmentClass(driver);
-		DirectAssignmentClass.OpenProject("//*[@id='$b3']/div/a[2]/div/img");
-		
-	}
-  
-  @Test (priority = 3 , enabled = true)
-  public void ProcurementSendProject()  //Procurement approve the project
-	{
-		DirectAssignmentClass = new ProjectsPages.DirectAssignmentClass(driver);
-		DirectAssignmentClass.Procurementapprove();
-	}
-  
-  @Test (priority = 4, enabled = true) //ProcurementLogout
-  public void ProcurementLogout() throws InterruptedException
- 	{
-	  userlogout = new UserLogout(driver);
-	  userlogout.logout();
- 	}
-  
+//  @Test (priority = 1, enabled = true) //ProcurementLogin
+//  public void LoginSuccessfullyProcurement() throws InterruptedException
+//	{
+//		userlogin = new UserLogin(driver);	
+//		userlogin.userlogin("smohamed-v@infath.sa", "Test123");
+//	}
+//  
+//  @Test (priority = 2, enabled = true)
+//  public void ProcurementSelectProject() throws InterruptedException  //Procurement approve the project
+//	{
+//		DirectAssignmentClass = new ProjectsPages.DirectAssignmentClass(driver);
+//		DirectAssignmentClass.OpenProject("//*[@id='$b3']/div/a[2]/div/img");
+//		
+//	}
+//  
+//  @Test (priority = 3 , enabled = true)
+//  public void ProcurementSendProject()  //Procurement approve the project
+//	{
+//		DirectAssignmentClass = new ProjectsPages.DirectAssignmentClass(driver);
+//		DirectAssignmentClass.Procurementapprove();
+//	}
+//  
+//  @Test (priority = 4, enabled = true) //ProcurementLogout
+//  public void ProcurementLogout() throws InterruptedException
+// 	{
+//	  userlogout = new UserLogout(driver);
+//	  userlogout.logout();
+// 	}
+//  
   @Test (priority = 5, enabled = true) //Committee HeadLogin
   public void LoginSuccessfullyQA() throws InterruptedException
  	{

@@ -30,7 +30,7 @@ public class TaskPage {
 	}
 	WebDriverWait wait;
 	private By taskname = By.xpath("(//div[@class='display-flex align-items-flex-start']/div[text()='Judicial Decision Number'])[1]");
-	private By pendingonentrybutton = By.xpath("//div[@class='display-flex align-items-center ThemeGrid_Width10']/span[text()='Pending on Entry']"); // filtering pending o entry Tasks List
+	private By pendingonentrybutton = By.xpath("//div[@class='display-flex align-items-center margin-right-base OSInline']/span[text()='Pending on Entry']"); // filtering pending o entry Tasks List
 
 	
 	
@@ -262,7 +262,7 @@ public class TaskPage {
 	private By Attachments_checkbox = By.xpath("(//input[@class='checkbox'])[1]");
 	private By addassetsowner_button = By.xpath("//button[@class='btn btn-primary ThemeGrid_MarginGutter']/i[@class='icon margin-right-s fa fa-plus fa-1x']");
 	private By ownerid_textbox = By.xpath("//input[@id='b4-b19-b7-b15-Owner_ID']");
-	private By ownername_textbox = By.xpath("//input[@id='b4-b19-b7-b15-Input_Party_Number']");
+	private By ownername_textbox = By.xpath("//input[@id='b4-b19-b7-b15-Input_Owner_Name']");
 	private By dateofbirth_textbox = By.xpath("//input[@id='b4-b19-b7-b15-b3-Input_DateVar']");
 	private By ownershippercentage_textbox = By.xpath("//input[@id='b4-b19-b7-b15-Percentage']");
 	private By saveassetbutton = By.xpath("(//div[@id='b4-b19-b7-b15-b6-Button']/button[@class='btn btn-primary'])");
@@ -293,10 +293,12 @@ public void addassetsentry(String assettitlepath,String Schema,String PartNumber
 	wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	
 	
-//	driver.findElement(subtypetextbox).sendKeys("Sub Type text");
+	
+	driver.findElement(subtypetextbox).sendKeys("Sub Type text");
 	
 	 Select listvalue2 = new Select(driver.findElement(PropertyDeedType_dropdownlist));
-	 listvalue2.selectByValue("3");
+	 listvalue2.selectByVisibleText("Undefined");
+	 
 	 
 	Select list2value = new Select(driver.findElement(Propertystatus_dropdownlist));
 	list2value.selectByValue("0");
@@ -373,7 +375,7 @@ public void addassetsentry(String assettitlepath,String Schema,String PartNumber
 }
 	 //Send for initial approve
 	
-		private By sendforinitialapprovalbutton = By.xpath("//div[@class='footer-actions margin-top-base background-neutral-2 padding-s border-radius-soft']/button[text()='Send for Initial Approval']");
+		private By sendforinitialapprovalbutton = By.xpath("//div[@class='footer-actions margin-top-base background-neutral-2 padding-s border-radius-soft custom']/button[text()='Send for Initial Approval']");
 		private By approvesendingbutton = By.xpath("//button[text()='Approve']");
 		
 	public void sendforinitialapproval() throws InterruptedException

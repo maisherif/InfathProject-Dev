@@ -33,7 +33,7 @@ public class FilldataJusticWriterClass {
 		private By radiobutton4 = By.xpath("//input[@id='b4-RadioButton19-input']");
 		private By JusticeWriterAttachments = By.xpath("//input[@id='b4-b1-FileUploadInput']");
 		private By submitjusticwriter = By.xpath("//button[@id='b4-Submit']");
-		private By approvejusticwriterbutton = By.xpath("//button[@class='btn btn-primary OSFillParent']");
+		private By approvejusticwriterbutton = By.xpath("//button[@class='btn btn-primary']");
 		private By searchtasknumber = By.xpath("//input[@id='b4-Input_Task_Number']");
 		private By searchbutton = By.xpath("//button[text()='Search']");
 
@@ -42,8 +42,8 @@ public class FilldataJusticWriterClass {
 			
 //			 driver.findElement(searchtasknumber).sendKeys(tasknumber);
 
-			 WebElement buttonn =driver.findElement(searchbutton);
-			 clickButtonJS(buttonn);
+//			 WebElement buttonn =driver.findElement(searchbutton);
+//			 clickButtonJS(buttonn);
 			
 			 By eyeicon = By.xpath(eyexpath);
 			 Thread.sleep(5000);

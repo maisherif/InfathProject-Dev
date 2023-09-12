@@ -61,10 +61,10 @@ public class EvaluationClass {
 		//report data
 		private By viewdate = By.xpath("(//span[@class='input-date']/input)[1]");
 		private By evaluationdate = By.xpath("(//span[@class='input-date']/input)[2]");
-		private By addresstextbox = By.xpath("//input[@id='b5-b19-b1-b7-Input_DateVar3']");
-		private By methoddropdownlist = By.xpath("//div[@id='b5-b19-b1-b7-Dropdown1-container']/select");
-		private By contactnumbertextbox = By.xpath("//input[@id='b5-b19-b1-b7-Input_DecimalVar']");
-		private By savereportdatabutton = By.xpath("//div[@id='b5-b19-b1-b7-b1-Button']/button");
+		private By addresstextbox = By.xpath("//input[@id='b5-b19-b1-b8-Input_DateVar3']");
+		private By methoddropdownlist = By.xpath("//div[@id='b5-b19-b1-b8-Dropdown1-container']/select");
+		private By contactnumbertextbox = By.xpath("//input[@id='b5-b19-b1-b8-Input_DecimalVar']");
+		private By savereportdatabutton = By.xpath("//div[@id='b5-b19-b1-b8-b2-Button']/button");
 
 		public void addreportdata(String viewdatestring, String evaluationdatee, String address, String contactnumber) throws InterruptedException 
 		{
@@ -89,10 +89,10 @@ public class EvaluationClass {
 		}	
 		
 		//work scope
-		private By reportidtextbox = By.xpath("//input[@id='b5-b19-b1-b9-Input_TextVar']");
-		private By costbasictextbox = By.xpath("//input[@id='b5-b19-b1-b9-Input_TextVar2']");
-		private By checkbox = By.xpath("//input[@id='b5-b19-b1-b9-Checkbox1']");
-		private By saveworkscope = By.xpath("(//div[@id='b5-b19-b1-b9-b1-Button']/button)");
+		private By reportidtextbox = By.xpath("//input[@id='b5-b19-b1-b10-Input_TextVar']");
+		private By costbasictextbox = By.xpath("//input[@id='b5-b19-b1-b10-Input_TextVar2']");
+		private By checkbox = By.xpath("//input[@id='b5-b19-b1-b10-Checkbox1']");
+		private By saveworkscope = By.xpath("(//div[@id='b5-b19-b1-b10-b1-Button']/button)");
 		
 		public void addworkscope(String reportid, String costbasic) 
 		{
@@ -112,39 +112,39 @@ public class EvaluationClass {
 		}	
 		
 		//asset information
-		private By liciencenumbertextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar']");
-		private By streetwidthtextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar2']");
-		private By constructionareatextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar']");
-		private By numFragmentationRecordtextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar4']");
-		private By streetnametextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar5']");
-		private By nameNearestMainStreettextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_varText']");
+		private By liciencenumbertextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar']");
+		private By streetwidthtextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar2']");
+		private By constructionareatextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar']");
+		private By numFragmentationRecordtextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar4']");
+		private By streetnametextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar5']");
+		private By nameNearestMainStreettextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_varText']");
 
 		//*[@id=\"b5-b17-b1-b11-MapContainer\"]/div[2]/div/div/div[2]/div[2]/div
-		private By location = By.xpath("(//div[@id='b5-b19-b1-b11-MapContainer']/div[2]/div/div/div[2]/div/div/div[2]/div[2])[1]");
+		private By location = By.xpath("(//div[@id='b5-b19-b1-b12-MapContainer']/div[2]/div/div/div[2]/div/div/div[2]/div[2])[1]");
 
-		private By numroomstextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar6']");
-		private By numhallstextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar7']");
-		private By numapartmenttextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar8']");
-		private By numbathroomtextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar9']");
-		private By propertyagetextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar10']");
-		private By demondtextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_varText2']");
-		private By numgalleriestextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar13']");
-		private By numtowerstextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar15']");
-		private By propertydescriptiontextbox = By.xpath("//textarea[@id='b5-b19-b1-b11-TextArea_PropertyDescription']");
+		private By numroomstextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar6']");
+		private By numhallstextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar7']");
+		private By numapartmenttextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar8']");
+		private By numbathroomtextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar9']");
+		private By propertyagetextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar10']");
+		private By demondtextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_varText2']");
+		private By numgalleriestextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar13']");
+		private By numtowerstextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar15']");
+		private By propertydescriptiontextbox = By.xpath("//textarea[@id='b5-b19-b1-b12-TextArea_PropertyDescription']");
 		
-		private By availableservicesdropdownlist = By.xpath("//div[@id='b5-b19-b1-b11-b5-DropdownBar']");
-		private By selectallcheckbox = By.xpath("//div[@class='multi-select-react-and-mob-checkbox-container servicestudio']/span/input[@id='b5-b19-b1-b11-b5-Checkbox_SelectAll']");
+		private By availableservicesdropdownlist = By.xpath("//div[@id='b5-b19-b1-b12-b6-DropdownBar']");
+		private By selectallcheckbox = By.xpath("//div[@class='multi-select-react-and-mob-checkbox-container servicestudio']/span/input[@id='b5-b19-b1-b12-b6-Checkbox_SelectAll']");
 		
-		private By facilitiessdropdownlist = By.xpath("//div[@id='b5-b19-b1-b11-b6-DropdownBar']");
-		private By selectallcheckbox2 = By.xpath("//div[@class='multi-select-react-and-mob-checkbox-container servicestudio']/span/input[@id='b5-b19-b1-b11-b6-Checkbox_SelectAll']");
+		private By facilitiessdropdownlist = By.xpath("//div[@id='b5-b19-b1-b12-b7-DropdownBar']");
+		private By selectallcheckbox2 = By.xpath("//div[@class='multi-select-react-and-mob-checkbox-container servicestudio']/span/input[@id='b5-b19-b1-b12-b7-Checkbox_SelectAll']");
 		
-		private By numwelltextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar11']");
-		private By advtextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar16']");
-		private By waytextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar17']");
-		private By propertynotestextbox = By.xpath("//input[@id='b5-b19-b1-b11-Input_DecimalVar18']");
+		private By numwelltextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar11']");
+		private By advtextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar16']");
+		private By waytextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar17']");
+		private By propertynotestextbox = By.xpath("//input[@id='b5-b19-b1-b12-Input_DecimalVar18']");
 		
-		private By saveassetinfo = By.xpath("(//div[@id='b5-b19-b1-b11-b7-Button']/button)");
-		private By savelinkedassets = By.xpath("(//div[@id='b5-b19-b1-b15-b1-Button']/button)");
+		private By saveassetinfo = By.xpath("(//div[@id='b5-b19-b1-b12-b8-Button']/button)");
+//		private By savelinkedassets = By.xpath("(//div[@id='b5-b19-b1-b15-b1-Button']/button)");
 
 		
 		public void addassetinfo() throws InterruptedException 
@@ -208,12 +208,12 @@ public class EvaluationClass {
 			  clickButtonJS(save);
 		}	
 		//Borders and lengths for the asset
-		private By numberofBuildingsFloorstextbox = By.xpath("//input[@id='b5-b19-b1-b13-Input_BuildingFloorsNo']");
-		private By basementtextbox = By.xpath("//input[@id='b5-b19-b1-b13-Input_BasementArea']");
-		private By annextextbox = By.xpath("//input[@id='b5-b19-b1-b13-Input_AnnexArea']");
-		private By buildingareatextbox = By.xpath("//input[@id='b5-b19-b1-b13-Input_BuildingArea']");
+		private By numberofBuildingsFloorstextbox = By.xpath("//input[@id='b5-b19-b1-b14-Input_BuildingFloorsNo']");
+		private By basementtextbox = By.xpath("//input[@id='b5-b19-b1-b14-Input_BasementArea']");
+		private By annextextbox = By.xpath("//input[@id='b5-b19-b1-b14-Input_AnnexArea']");
+		private By buildingareatextbox = By.xpath("//input[@id='b5-b19-b1-b14-Input_BuildingArea']");
 
-		private By saveborders = By.xpath("(//div[@id='b5-b19-b1-b13-b1-Button']/button)");
+		private By saveborders = By.xpath("(//div[@id='b5-b19-b1-b14-b5-Button']/button)");
 
 		
 		public void addborder() throws InterruptedException 
@@ -221,26 +221,26 @@ public class EvaluationClass {
 			  JavascriptExecutor js = (JavascriptExecutor) driver;
 			  js.executeScript("arguments[0].scrollIntoView();",  driver.findElement(numberofBuildingsFloorstextbox));
 
-			  driver.findElement(numberofBuildingsFloorstextbox).sendKeys("123");
-			  driver.findElement(buildingareatextbox).sendKeys("123");
-			  driver.findElement(basementtextbox).sendKeys("123");
+			  driver.findElement(numberofBuildingsFloorstextbox).sendKeys("13");
+			  driver.findElement(buildingareatextbox).sendKeys("13");
+			  driver.findElement(basementtextbox).sendKeys("12");
 			  driver.findElement(annextextbox).sendKeys("9");
 			  
 			  WebElement save = driver.findElement(saveborders);
 			  clickButtonJS(save);
-			  
-			  save = driver.findElement(savelinkedassets);
-			  clickButtonJS(save);
+//			  
+//			  save = driver.findElement(savelinkedassets);
+//			  clickButtonJS(save);
 			  
 		}
 		
 		//Estimated value
-		private By LandNumericalValuetextbox = By.xpath("//input[@id='b5-b19-b1-b17-Input_LandNumericalValue']");
-		private By BuildingNumericalValuetextbox = By.xpath("//input[@id='b5-b19-b1-b17-Input_BuildingNumericalValue']");
-		private By totalValuetextbox = By.xpath("//input[@id='b5-b19-b1-b17-Input_TotalPropertyNumerical2']");
-		private By DosciuntPercentageValuetextbox = By.xpath("//input[@id='b5-b19-b1-b17-Input_DosciuntPercentageValue']");
+		private By LandNumericalValuetextbox = By.xpath("//input[@id='b5-b19-b1-b18-Input_LandNumericalValue']");
+		private By BuildingNumericalValuetextbox = By.xpath("//input[@id='b5-b19-b1-b18-Input_BuildingNumericalValue']");
+		private By totalValuetextbox = By.xpath("//input[@id='b5-b19-b1-b18-Input_TotalPropertyNumerical2']");
+		private By DosciuntPercentageValuetextbox = By.xpath("//input[@id='b5-b19-b1-b18-Input_DosciuntPercentageValue']");
 
-		private By saveestimatevalue = By.xpath("//div[@id='b5-b19-b1-b17-b1-Button']/button");
+		private By saveestimatevalue = By.xpath("//div[@id='b5-b19-b1-b18-b1-Button']/button");
 		
 		public void addestimatevalue() throws InterruptedException 
 		{
@@ -256,13 +256,13 @@ public class EvaluationClass {
 			  clickButtonJS(save); 
 		}
 		//Asset Pictures
-		private By assetlocationtextbox = By.xpath("//input[@id='b5-b19-b1-b19-Input_AssetLocation']");
-		private By uploadimagebutton1 = By.xpath("//input[@id='b5-b19-b1-b19-b1-FileUploadInput']");
-		private By uploadimagebutton2 = By.xpath("//input[@id='b5-b19-b1-b19-b3-FileUploadInput']");
-		private By uploadimagebutton3 = By.xpath("//input[@id='b5-b19-b1-b19-b5-FileUploadInput']");
-		private By uploadimagebutton4 = By.xpath("//input[@id='b5-b19-b1-b19-b7-FileUploadInput']");
+		private By assetlocationtextbox = By.xpath("//input[@id='b5-b19-b1-b20-Input_AssetLocation']");
+		private By uploadimagebutton1 = By.xpath("//input[@id='b5-b19-b1-b20-b1-FileUploadInput']");
+		private By uploadimagebutton2 = By.xpath("//input[@id='b5-b19-b1-b20-b3-FileUploadInput']");
+		private By uploadimagebutton3 = By.xpath("//input[@id='b5-b19-b1-b20-b5-FileUploadInput']");
+		private By uploadimagebutton4 = By.xpath("//input[@id='b5-b19-b1-b20-b7-FileUploadInput']");
 
-		private By saveassetpictures = By.xpath("//div[@id='b5-b19-b1-b19-b9-Button']/button");
+		private By saveassetpictures = By.xpath("//div[@id='b5-b19-b1-b20-b9-Button']/button");
 
 		public void addassetpictures() throws InterruptedException, AWTException 
 		{
@@ -294,13 +294,13 @@ public class EvaluationClass {
 			  
 		}
 		//Persons work on report
-		private By addpersonbutton = By.xpath("//div[@id='b5-b19-b1-b21-AddBtn']/button");
-		private By personnametextbox = By.xpath("//input[@id='b5-b19-b1-b21-Input_Name']");
-		private By licencenumbertextbox = By.xpath("//input[@id='b5-b19-b1-b21-Input_Name2']");
-		private By licencedate = By.xpath("//input[@id='b5-b19-b1-b21-Input_Name3']");
-		private By licienceuploader = By.xpath("//input[@id='b5-b19-b1-b21-b2-FileUploadInput']");
+		private By addpersonbutton = By.xpath("//div[@id='b5-b19-b1-b22-AddBtn']/button");
+		private By personnametextbox = By.xpath("//input[@id='b5-b19-b1-b22-Input_Name']");
+		private By licencenumbertextbox = By.xpath("//input[@id='b5-b19-b1-b22-Input_Name2']");
+		private By licencedate = By.xpath("//input[@id='b5-b19-b1-b22-Input_Name3']");
+		private By licienceuploader = By.xpath("//input[@id='b5-b19-b1-b22-b2-FileUploadInput']");
 
-		private By saveaddperson = By.xpath("//div[@id='b5-b19-b1-b21-b4-Button']/button");
+		private By saveaddperson = By.xpath("//div[@id='b5-b19-b1-b22-b4-Button']/button");
 		
 		public void addpersonworkreport() throws InterruptedException, AWTException 
 		{
@@ -309,8 +309,10 @@ public class EvaluationClass {
 			  driver.findElement(personnametextbox).sendKeys("Mai");
 			  driver.findElement(licencenumbertextbox).sendKeys("123");
 
-			  driver.findElement(licencedate).sendKeys("09-10-2022");
+			  Thread.sleep(2000);
+			  driver.findElement(licencedate).sendKeys("2022-01-01");
 
+			  
 			//Uploader
 			  String filename="abc.pdf";
 			  String filepath=  System.getProperty("user.dir")+"\\uploads\\"+filename;
@@ -324,7 +326,7 @@ public class EvaluationClass {
 			  clickButtonJS(save);
 			  
 		}
-		private By saveresearchdomain = By.xpath("//div[@id='b5-b19-b1-b23-b1-Button']/button");
+		private By saveresearchdomain = By.xpath("//div[@id='b5-b19-b1-b24-b1-Button']/button");
 		public void addresearchdomain()
 		{
 			 WebElement save = driver.findElement(saveresearchdomain);
@@ -332,9 +334,9 @@ public class EvaluationClass {
 		}
 		
 		//The Final Data
-		private By notestextbox = By.xpath("//textarea[@id='b5-b19-b1-b25-TextArea_Notes']");
-		private By attachmentbutton = By.xpath("//input[@id='b5-b19-b1-b25-b1-FileUploadInput']");
-		private By savefinaldata = By.xpath("//div[@id='b5-b19-b1-b25-b3-Button']/button");
+		private By notestextbox = By.xpath("//textarea[@id='b5-b19-b1-b26-TextArea_Notes']");
+		private By attachmentbutton = By.xpath("//input[@id='b5-b19-b1-b26-b1-FileUploadInput']");
+		private By savefinaldata = By.xpath("//div[@id='b5-b19-b1-b26-b3-Button']/button");
 
 		public void addfinaldata() throws InterruptedException, AWTException 
 		{			
@@ -356,7 +358,7 @@ public class EvaluationClass {
 
 		}
 		
-		private By sendevaluationforreviewbutton = By.xpath("//button[@id='b5-b19-b1-b29-Btn_ServiceProvider_Aprrove']");
+		private By sendevaluationforreviewbutton = By.xpath("//button[@id='b5-b19-b1-b31-Btn_ServiceProvider_Aprrove']");
 		private By assetlistpagebutton =By.xpath("//div[@class='display-flex text-align-center flex-direction-column align-items-center  item  active ']/img");
 		public void sendevaluationforreview() throws InterruptedException
 		{
