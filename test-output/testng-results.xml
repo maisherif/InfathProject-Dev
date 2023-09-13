@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-05T17:16:56 EET" name="Default suite" finished-at="2023-09-05T17:17:51 EET" duration-ms="54853">
+  <suite started-at="2023-09-12T14:41:24 EET" name="Default suite" finished-at="2023-09-12T14:41:57 EET" duration-ms="33141">
     <groups>
     </groups>
-    <test started-at="2023-09-05T17:16:56 EET" name="Default test" finished-at="2023-09-05T17:17:51 EET" duration-ms="54853">
-      <class name="tests.AddrecomendationTest">
-        <test-method is-config="true" signature="Startdriver(java.lang.String)[pri:0, instance:tests.AddrecomendationTest@1e6a3214]" started-at="2023-09-05T17:16:56 EET" name="Startdriver" finished-at="2023-09-05T17:17:06 EET" duration-ms="10039" status="PASS">
+    <test started-at="2023-09-12T14:41:24 EET" name="Default test" finished-at="2023-09-12T14:41:57 EET" duration-ms="33141">
+      <class name="tests.DataEntryTest">
+        <test-method is-config="true" signature="Startdriver(java.lang.String)[pri:0, instance:tests.DataEntryTest@20140db9]" started-at="2023-09-12T14:41:24 EET" name="Startdriver" finished-at="2023-09-12T14:41:31 EET" duration-ms="6446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startdriver -->
-        <test-method signature="loginLegalConsultationResearcher2()[pri:0, instance:tests.AddrecomendationTest@1e6a3214]" started-at="2023-09-05T17:17:06 EET" name="loginLegalConsultationResearcher2" finished-at="2023-09-05T17:17:16 EET" duration-ms="9951" status="PASS">
+        <test-method signature="LoginSuccessfullydataentry()[pri:0, instance:tests.DataEntryTest@20140db9]" started-at="2023-09-12T14:41:31 EET" name="LoginSuccessfullydataentry" finished-at="2023-09-12T14:41:36 EET" duration-ms="5004" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginLegalConsultationResearcher2 -->
-        <test-method signature="addrecomendation()[pri:0, instance:tests.AddrecomendationTest@1e6a3214]" started-at="2023-09-05T17:17:16 EET" name="addrecomendation" finished-at="2023-09-05T17:17:51 EET" depends-on-methods="tests.AddrecomendationTest.loginLegalConsultationResearcher2" duration-ms="34816" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- LoginSuccessfullydataentry -->
+        <test-method signature="DataEntry()[pri:0, instance:tests.DataEntryTest@20140db9]" started-at="2023-09-12T14:41:36 EET" name="DataEntry" finished-at="2023-09-12T14:41:57 EET" depends-on-methods="tests.DataEntryTest.LoginSuccessfullydataentry" duration-ms="21657" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Unable to locate element: //div[@id='b4-b4-Title']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Element <input class="choices__input choices__input--cloned" type="text"> is not reachable by keyboard
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MAISHERIF', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'MAISHERIF', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8d4d128d-888e-41ab-aff9-0e3c87ae3542, findElement {using=xpath, value=//div[@id='b4-b4-Title']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:55705, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 444, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55705/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8d4d128d-888e-41ab-aff9-0e3c87ae3542]]>
+Command: [91024d9e-7d8e-4307-9f4b-4b04ed3732b2, sendKeysToElement {id=c1da7fdb-ec60-498b-8b92-f1a50306279a, value=[Ljava.lang.CharSequence;@4a3bd45b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:51387, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12736, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51387/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (91024d9e-7d8e-4307-9f4b-4b04ed3732b2)] -> xpath: (//div[@class='search--wrapper']/input[@class='choices__input choices__input--cloned'])[1]]
+Session ID: 91024d9e-7d8e-4307-9f4b-4b04ed3732b2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='b4-b4-Title']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input class="choices__input choices__input--cloned" type="text"> is not reachable by keyboard
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MAISHERIF', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'MAISHERIF', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8d4d128d-888e-41ab-aff9-0e3c87ae3542, findElement {using=xpath, value=//div[@id='b4-b4-Title']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:55705, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 444, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55705/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8d4d128d-888e-41ab-aff9-0e3c87ae3542
+Command: [91024d9e-7d8e-4307-9f4b-4b04ed3732b2, sendKeysToElement {id=c1da7fdb-ec60-498b-8b92-f1a50306279a, value=[Ljava.lang.CharSequence;@4a3bd45b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:51387, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12736, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51387/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (91024d9e-7d8e-4307-9f4b-4b04ed3732b2)] -> xpath: (//div[@class='search--wrapper']/input[@class='choices__input choices__input--cloned'])[1]]
+Session ID: 91024d9e-7d8e-4307-9f4b-4b04ed3732b2
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -55,12 +55,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at pages.AddRecomendationClass.addrecomendation(AddRecomendationClass.java:64)
-at tests.AddrecomendationTest.addrecomendation(AddrecomendationTest.java:46)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at pages.TaskPage.addassetsentry(TaskPage.java:324)
+at tests.DataEntryTest.DataEntry(DataEntryTest.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,45 +89,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addrecomendation -->
-        <test-method signature="logout2()[pri:0, instance:tests.AddrecomendationTest@1e6a3214]" started-at="2023-09-05T17:17:51 EET" name="logout2" finished-at="2023-09-05T17:17:51 EET" depends-on-methods="tests.AddrecomendationTest.addrecomendation" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method tests.AddrecomendationTest.logout2() on instance tests.AddrecomendationTest@1e6a3214 depends on not successfully finished methods 
-[tests.AddrecomendationTest.addrecomendation() on instance tests.AddrecomendationTest@1e6a3214]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.AddrecomendationTest.logout2() on instance tests.AddrecomendationTest@1e6a3214 depends on not successfully finished methods 
-[tests.AddrecomendationTest.addrecomendation() on instance tests.AddrecomendationTest@1e6a3214]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout2 -->
-      </class> <!-- tests.AddrecomendationTest -->
+        </test-method> <!-- DataEntry -->
+      </class> <!-- tests.DataEntryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
