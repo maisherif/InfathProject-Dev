@@ -13,6 +13,7 @@
   <url>http://www.example.com</url>
 
   <properties>
+    <file>XMLs/testng.xml</file>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -45,7 +46,7 @@
         <version>3.0.0-M5</version>
            <configuration>
             <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>${file}</suiteXmlFile>
           </suiteXmlFiles>
           </configuration>
       </plugin>

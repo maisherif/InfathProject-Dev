@@ -1,50 +1,275 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 223.624 s <<< FAILURE! - in TestSuite
-ProjectsTests.assignSaleCommitteeTest.OpenCommitteeTab  Time elapsed: 128.096 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (99e68161-5899-4501-9a68-a012e5b15440)] -> xpath: //div[@id='b4-b9-Title']] (tried for 120 second(s) with 500 milliseconds interval)
+Tests run: 32, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 298.492 s <<< FAILURE! - in TestSuite
+ProjectsTests.DirectAssignmentTest.QASelectProject  Time elapsed: 6.759 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MAISHERIF', ip: '192.168.3.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:57716, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10592, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:57716/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99e68161-5899-4501-9a68-a012e5b15440
-	at ProjectsTests.assignSaleCommitteeTest.OpenCommitteeTab(assignSaleCommitteeTest.java:44)
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, isElementDisplayed {id=d123d99f-cfe3-4231-9edb-fd33f801c83c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (dd9f22a1-6484-413b-b4e7-fbdc2ea55c23)] -> xpath: //*[@id='$b3']/div/a[3]/div/img]
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.QASelectProject(DirectAssignmentTest.java:63)
 
-ProjectsTests.assignSaleCommitteeTest.ChooseHead  Time elapsed: 20.012 s  <<< FAILURE!
+ProjectsTests.DirectAssignmentTest.AssignSP  Time elapsed: 0 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//div[@id='b4-b6-Title']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.AssignSP(DirectAssignmentTest.java:70)
+
+ProjectsTests.DirectAssignmentTest.QALogout  Time elapsed: 0.002 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='b2-b3-Icon3']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.QALogout(DirectAssignmentTest.java:78)
+
+ProjectsTests.DirectAssignmentTest.LoginSuccessfullyMember  Time elapsed: 0.003 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, setTimeout {implicit=20000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.LoginSuccessfullyMember(DirectAssignmentTest.java:85)
+
+ProjectsTests.DirectAssignmentTest.MemberSelectProject  Time elapsed: 2.017 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='$b3']/div/a[2]/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.MemberSelectProject(DirectAssignmentTest.java:92)
+
+ProjectsTests.DirectAssignmentTest.SendRecommendation  Time elapsed: 0.005 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//div[@id='b4-b6-Title']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.SendRecommendation(DirectAssignmentTest.java:100)
+
+ProjectsTests.DirectAssignmentTest.MemberLogout  Time elapsed: 0.003 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='b2-b3-Icon3']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.MemberLogout(DirectAssignmentTest.java:108)
+
+ProjectsTests.DirectAssignmentTest.LoginSuccessfullyMember2  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, setTimeout {implicit=20000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.LoginSuccessfullyMember2(DirectAssignmentTest.java:115)
+
+ProjectsTests.DirectAssignmentTest.MemberSelectProject2  Time elapsed: 2.012 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='$b3']/div/a[2]/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.MemberSelectProject2(DirectAssignmentTest.java:122)
+
+ProjectsTests.DirectAssignmentTest.MemberSendRecommendation2  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//div[@id='b4-b6-Title']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.MemberSendRecommendation2(DirectAssignmentTest.java:130)
+
+ProjectsTests.DirectAssignmentTest.MemberLogout2  Time elapsed: 0.003 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='b2-b3-Icon3']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.MemberLogout2(DirectAssignmentTest.java:138)
+
+ProjectsTests.DirectAssignmentTest.LoginSuccessfullyComitteeHead  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, setTimeout {implicit=20000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.LoginSuccessfullyComitteeHead(DirectAssignmentTest.java:145)
+
+ProjectsTests.DirectAssignmentTest.HeadOpenProject  Time elapsed: 2.016 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='$b3']/div/a[2]/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.HeadOpenProject(DirectAssignmentTest.java:155)
+
+ProjectsTests.DirectAssignmentTest.HeadApprove  Time elapsed: 0.005 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//button[@id='b4-b24-b5-Btn_CommittyHeadApprove']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.HeadApprove(DirectAssignmentTest.java:164)
+
+ProjectsTests.DirectAssignmentTest.HeadLogout  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*[@id='b2-b3-Icon3']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.HeadLogout(DirectAssignmentTest.java:172)
+
+ProjectsTests.DirectAssignmentTest.LoginSuccessfullyCEO  Time elapsed: 0.003 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, setTimeout {implicit=20000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.LoginSuccessfullyCEO(DirectAssignmentTest.java:179)
+
+ProjectsTests.DirectAssignmentTest.CEPOpenProject  Time elapsed: 2.02 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//*//*[@id="$b3"]/div/a[3]/div/span}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.CEPOpenProject(DirectAssignmentTest.java:187)
+
+ProjectsTests.DirectAssignmentTest.CEOApprove  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dd9f22a1-6484-413b-b4e7-fbdc2ea55c23, findElement {using=xpath, value=//button[@id='b4-b24-b5-Btn_CEOApprove']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:58710, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:58710/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dd9f22a1-6484-413b-b4e7-fbdc2ea55c23
+	at ProjectsTests.DirectAssignmentTest.CEOApprove(DirectAssignmentTest.java:196)
+
+ProjectsTests.SPApproveAssigningTest.Approve  Time elapsed: 20.012 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //div[@class='choices__item needsclick choices__item--selectable choices__placeholder']
+Unable to locate element: //input[@id='b5-b18-Checkbox1']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MAISHERIF', ip: '192.168.3.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [99e68161-5899-4501-9a68-a012e5b15440, findElement {using=xpath, value=//div[@class='choices__item needsclick choices__item--selectable choices__placeholder']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:57716, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10592, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:57716/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99e68161-5899-4501-9a68-a012e5b15440
-	at ProjectsTests.assignSaleCommitteeTest.ChooseHead(assignSaleCommitteeTest.java:51)
+Command: [87d2ebf2-e970-45ed-87c7-3d6fe0c6a66c, findElement {using=xpath, value=//input[@id='b5-b18-Checkbox1']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:65199, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23596, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:65199/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 87d2ebf2-e970-45ed-87c7-3d6fe0c6a66c
+	at ProjectsTests.SPApproveAssigningTest.Approve(SPApproveAssigningTest.java:32)
 
-ProjectsTests.assignSaleCommitteeTest.ApproveByCEO  Time elapsed: 21.309 s  <<< FAILURE!
+ProjectPlanTests.AssignProjectManagerTest.assignpm  Time elapsed: 34.324 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: (//button[@class='btn btn-primary OSFillParent'])[1]
+Unable to locate element: (//i[@class='icon margin-right-s fa fa-user-plus fa-1x'])[3]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MAISHERIF', ip: '192.168.3.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [99e68161-5899-4501-9a68-a012e5b15440, findElement {using=xpath, value=(//button[@class='btn btn-primary OSFillParent'])[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:57716, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10592, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:57716/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99e68161-5899-4501-9a68-a012e5b15440
-	at ProjectsTests.assignSaleCommitteeTest.ApproveByCEO(assignSaleCommitteeTest.java:73)
+Command: [af4c1484-9ae2-420e-a11a-f29cac3314a1, findElement {using=xpath, value=(//i[@class='icon margin-right-s fa fa-user-plus fa-1x'])[3]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:61113, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1104, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:61113/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: af4c1484-9ae2-420e-a11a-f29cac3314a1
+	at ProjectPlanTests.AssignProjectManagerTest.assignpm(AssignProjectManagerTest.java:37)
 
-ProjectsTests.assignSaleCommitteeTest.AddSaleLetter  Time elapsed: 20.071 s  <<< FAILURE!
+ProjectPlanTests.AddProjectPlanTest.addprojectplan  Time elapsed: 34.035 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: (//span[@class='white-space-nowrap text-ellipsis'])[4]
+Unable to locate element: (//button[@class='btn btn-primary'])[2]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MAISHERIF', ip: '192.168.3.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [99e68161-5899-4501-9a68-a012e5b15440, findElement {using=xpath, value=(//span[@class='white-space-nowrap text-ellipsis'])[4]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:57716, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10592, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:57716/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99e68161-5899-4501-9a68-a012e5b15440
-	at ProjectsTests.assignSaleCommitteeTest.AddSaleLetter(assignSaleCommitteeTest.java:96)
+Command: [4fcfe74a-917f-4129-9b80-ac06b745aa26, findElement {using=xpath, value=(//button[@class='btn btn-primary'])[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:54553, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24608, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:54553/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4fcfe74a-917f-4129-9b80-ac06b745aa26
+	at ProjectPlanTests.AddProjectPlanTest.addprojectplan(AddProjectPlanTest.java:34)
+
+ProjectPlanTests.ApproveprojectPlan.approveproject  Time elapsed: 46.818 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: (//a[@class='display-flex align-items-center justify-content-center'])[2]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1372422a-8c8a-4be8-b03f-872860d1585f, findElement {using=xpath, value=(//a[@class='display-flex align-items-center justify-content-center'])[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:61735, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3104, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:61735/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1372422a-8c8a-4be8-b03f-872860d1585f
+	at ProjectPlanTests.ApproveprojectPlan.approveproject(ApproveprojectPlan.java:38)
+
+AuctionPlan.AuctionPlanTest.auctionplan  Time elapsed: 21.41 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+Element <input id="b5-b16-l2-199_0-Input_StartingDate" class="form-control OSFillParent" type="date"> is not reachable by keyboard
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ff082c6e-97bb-4927-ba66-244b8c5dc1c0, sendKeysToElement {id=8686573c-ec7b-4b50-aa74-16fc58c9ce12, value=[Ljava.lang.CharSequence;@53d2d002}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:63646, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1796, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:63646/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (ff082c6e-97bb-4927-ba66-244b8c5dc1c0)] -> xpath: (//input[@class='form-control OSFillParent'])[7]]
+Session ID: ff082c6e-97bb-4927-ba66-244b8c5dc1c0
+	at AuctionPlan.AuctionPlanTest.auctionplan(AuctionPlanTest.java:33)
+
+AuctionPlan.ApproveAuctionPlanTest.auctionplan  Time elapsed: 34.772 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: (//div[@class='display-flex justify-content-flex-end margin-top-base']/button)[2]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MAISHERIF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bb2965ae-e6b5-471f-b431-01a7f4b30799, findElement {using=xpath, value=(//div[@class='display-flex justify-content-flex-end margin-top-base']/button)[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230912013654, moz:debuggerAddress: 127.0.0.1:64073, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26736, moz:profile: C:\Users\CodeLab\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:64073/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bb2965ae-e6b5-471f-b431-01a7f4b30799
+	at AuctionPlan.ApproveAuctionPlanTest.auctionplan(ApproveAuctionPlanTest.java:35)
 

@@ -3,15 +3,70 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="ProjectsTests.assignSaleCommitteeTest">
+      <class name="ProjectsTests.SPApproveAssigningTest">
         <methods>
-          <include name="AddSaleLetter"/>
-          <include name="ChooseHead"/>
-          <include name="OpenCommitteeTab"/>
+          <include name="Approve"/>
           <include name="Startdriver"/>
-          <include name="ApproveByCEO"/>
         </methods>
-      </class> <!-- ProjectsTests.assignSaleCommitteeTest -->
+      </class> <!-- ProjectsTests.SPApproveAssigningTest -->
+      <class name="ProjectPlanTests.AssignProjectManagerTest">
+        <methods>
+          <include name="LoginPortofolioManager"/>
+          <include name="Startdriver"/>
+          <include name="assignpm"/>
+        </methods>
+      </class> <!-- ProjectPlanTests.AssignProjectManagerTest -->
+      <class name="ProjectPlanTests.ApproveprojectPlan">
+        <methods>
+          <include name="Startdriver"/>
+          <include name="approveproject"/>
+          <include name="LoginPM"/>
+        </methods>
+      </class> <!-- ProjectPlanTests.ApproveprojectPlan -->
+      <class name="ProjectPlanTests.AddProjectPlanTest">
+        <methods>
+          <include name="addprojectplan"/>
+          <include name="Startdriver"/>
+          <include name="LoginExternalUser"/>
+        </methods>
+      </class> <!-- ProjectPlanTests.AddProjectPlanTest -->
+      <class name="AuctionPlan.ApproveAuctionPlanTest">
+        <methods>
+          <include name="LoginPM"/>
+          <include name="Startdriver"/>
+          <include name="auctionplan"/>
+        </methods>
+      </class> <!-- AuctionPlan.ApproveAuctionPlanTest -->
+      <class name="ProjectsTests.DirectAssignmentTest">
+        <methods>
+          <include name="AssignSP"/>
+          <include name="LoginSuccessfullyComitteeHead"/>
+          <include name="QASelectProject"/>
+          <include name="Startdriver"/>
+          <include name="QALogout"/>
+          <include name="MemberLogout2"/>
+          <include name="SendRecommendation"/>
+          <include name="HeadOpenProject"/>
+          <include name="HeadLogout"/>
+          <include name="HeadApprove"/>
+          <include name="LoginSuccessfullyCEO"/>
+          <include name="LoginSuccessfullyMember"/>
+          <include name="LoginSuccessfullyMember2"/>
+          <include name="MemberSendRecommendation2"/>
+          <include name="CEOApprove"/>
+          <include name="MemberSelectProject"/>
+          <include name="MemberLogout"/>
+          <include name="MemberSelectProject2"/>
+          <include name="CEPOpenProject"/>
+        </methods>
+      </class> <!-- ProjectsTests.DirectAssignmentTest -->
+      <class name="AuctionPlan.AuctionPlanTest">
+        <methods>
+          <include name="LoginExternalUser"/>
+          <include name="auctionplan"/>
+          <include name="Startdriver"/>
+        </methods>
+      </class> <!-- AuctionPlan.AuctionPlanTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
