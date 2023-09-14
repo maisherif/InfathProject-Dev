@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="ProjectsTests.Addparticiepent">
         <methods>
           <include name="addpartipenttypeonbehalfofhimself"/>
@@ -10,6 +11,15 @@
           <include name="loginSP"/>
         </methods>
       </class> <!-- ProjectsTests.Addparticiepent -->
+=======
+      <class name="tests.DataEntryTest">
+        <methods>
+          <include name="LoginSuccessfullydataentry"/>
+          <include name="Startdriver"/>
+          <include name="DataEntry"/>
+        </methods>
+      </class> <!-- tests.DataEntryTest -->
+>>>>>>> 04f9fdf08257f8dbd84a031a2325441cb6c85389
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
